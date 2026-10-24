@@ -1,0 +1,2317 @@
+{
+  "sourceRepository": "dgaspard/AI-SDLC-ATDD-SoftwareFactory",
+  "sourceCommit": "9809c120cafd0ad867be6568621fac3ef54f1780",
+  "entries": [
+    {
+      "destination": ".claude/hooks/protect-paths.mjs",
+      "mode": "0o755",
+      "source": ".claude/hooks/protect-paths.mjs",
+      "sourceSha256": "0b072106d455932e61f4db8c96c29005383ec38d4dd53595f0639d15053c285f",
+      "importSha256": "0b072106d455932e61f4db8c96c29005383ec38d4dd53595f0639d15053c285f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": ".claude/settings.json",
+      "mode": "0o644",
+      "source": ".claude/settings.json",
+      "sourceSha256": "4fcc67c0cfa2123d7988d524e74407ef4c94df87b675772876f908d9b603115a",
+      "importSha256": "75ffbbaabe5e3d638e3cb2f27b0bb8dfc2094e051cd20b26eb67e1d0fa461e9c",
+      "disposition": "adapt"
+    },
+    {
+      "destination": ".dockerignore",
+      "mode": "0o644",
+      "source": ".dockerignore",
+      "sourceSha256": "445cdc8dad49fd922aebf201567f40fbfc0e8d3b285ef1e84581fe81cd9f7df1",
+      "importSha256": "445cdc8dad49fd922aebf201567f40fbfc0e8d3b285ef1e84581fe81cd9f7df1",
+      "disposition": "preserve"
+    },
+    {
+      "destination": ".github/CODEOWNERS",
+      "mode": "0o644",
+      "source": ".github/CODEOWNERS",
+      "sourceSha256": "2d75d4bc7faee68ad455fd34b9eee0261805feb5bc60891cbde3b027e947cfc7",
+      "importSha256": "ddf9c644c4894f2b53a6d208302d34b833f0bd2bf20e11db8a06bdb18b636569",
+      "disposition": "adapt"
+    },
+    {
+      "destination": ".github/workflows/guard.yml",
+      "mode": "0o644",
+      "source": ".github/workflows/guard.yml",
+      "sourceSha256": "8c24bbc3c1cf02da0eda0c3aedd5fd6e1d52e47775e633fad494a8cbfb9f4daf",
+      "importSha256": "1f12ef4e940f51d10998057615a4f4e5da7f4a33e0bc49e942ab2897aa7c3d00",
+      "disposition": "adapt"
+    },
+    {
+      "destination": ".gitignore",
+      "mode": "0o644",
+      "source": ".gitignore",
+      "sourceSha256": "38451022f30963be02816c91115db7ae717fad9705fac8b2c5de9518aa062f38",
+      "importSha256": "38451022f30963be02816c91115db7ae717fad9705fac8b2c5de9518aa062f38",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "AGENTS.md",
+      "mode": "0o644",
+      "source": "AGENTS.md",
+      "sourceSha256": "6e6764520ac5079143798ee572156bf9a981f9854236f5959cbfa2466868982d",
+      "importSha256": "007825a93cde78c29fde9aada224a91c937bbc75dbcb51c64d7788d04ffd3545",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "BACKLOG.md",
+      "mode": "0o644",
+      "source": "BACKLOG.md",
+      "sourceSha256": "ac336aaaf9a21764b48f5d3a6c7322b98a3c2a858788eb4797c539eb2d84d88f",
+      "importSha256": "93c2d8626b3031edfdf21f0540797cec9d4337414a7a9a6b90adbbfda3d11d13",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "CLAUDE.md",
+      "mode": "0o644",
+      "source": "CLAUDE.md",
+      "sourceSha256": "cdb9da42b72394f878eb28e1e81eeaa10a960958698b8eafcc30bb865e94ba6b",
+      "importSha256": "ae759b02d7dfe4c4453372e8c0af5588375da01e8e6ff677cdf32770d5da847a",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "MIGRATION.json",
+      "mode": "0o644",
+      "source": null,
+      "sourceSha256": null,
+      "importSha256": "84992e730ac29155ed22311109e0ec698e4ef87c7ead17b43866b5daf2e01a3c",
+      "disposition": "new"
+    },
+    {
+      "destination": "PROJECT-PLAN.md",
+      "mode": "0o644",
+      "source": "PROJECT-PLAN.md",
+      "sourceSha256": "4bdc23c03e1df3db20c19cfdf1c31e3307fa4afce07789b8b9b8979da11c0c78",
+      "importSha256": "5bd7473bdfe4b9c3c2d384ca1c9ab82ca52b6e81c897f009fed75ff11f552921",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "README.md",
+      "mode": "0o644",
+      "source": "README.md",
+      "sourceSha256": "1463af4c57430c5e3d27d33b900d724fb338d596ec8421e3da510f9ec833e38f",
+      "importSha256": "759fa3fc2cd592df389aa18e84f7b1fb0c834a637704ac3d444429639081abf1",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "compose.yaml",
+      "mode": "0o644",
+      "source": "compose.yaml",
+      "sourceSha256": "69bd19123f63b2aa087a11998df9cc9bcbab53094b29213724a04b696f7e348f",
+      "importSha256": "69bd19123f63b2aa087a11998df9cc9bcbab53094b29213724a04b696f7e348f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "docs/README.md",
+      "mode": "0o644",
+      "source": "docs/README.md",
+      "sourceSha256": "c5b2727a406b26f1f6be89bc7c0476c6eddc908c7053c0ad21abb8cdb4547bf4",
+      "importSha256": "f6410ecf138be969bcc66fb360ca255bf56c89114b4de567e350086ff3fad9cf",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "docs/delivery/environments.md",
+      "mode": "0o644",
+      "source": "docs/delivery/environments.md",
+      "sourceSha256": "53b3e435bdb2953f5978bbe38b6a3a1b17aa4c9259ef2da7a5b802f454740f82",
+      "importSha256": "53b3e435bdb2953f5978bbe38b6a3a1b17aa4c9259ef2da7a5b802f454740f82",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "docs/development-workflow.md",
+      "mode": "0o644",
+      "source": "docs/development-workflow.md",
+      "sourceSha256": "a1b1f52726b88f91ffb2a0dee2bd606100cb8cdc51684c7518f78fd09c1e1e66",
+      "importSha256": "7c6b1be8c6bfb82aa6530ac32b1ab2ab185a2144e32e269c41d1964405a76165",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "docs/observability.md",
+      "mode": "0o644",
+      "source": "docs/observability.md",
+      "sourceSha256": "fcf90b24e9a8d9e04985de07a9423eeabedfef486545a37d789f5504317feb2f",
+      "importSha256": "6f19a0287974f2f2e8d473daaf4a6b92fc9c6bae03c583df67202c2c928d623c",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "docs/specs/business-decisions.md",
+      "mode": "0o644",
+      "source": "docs/specs/business-decisions.md",
+      "sourceSha256": "8c5b842f91c6f736ccd54a3b4cc1fe374c86f380cfd3110369d59a050d81daae",
+      "importSha256": "f6ded8fa2184117c314a3f9f8b623a38a5213f9257788493a0dbfd0df4ebde15",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "docs/specs/domain-model.md",
+      "mode": "0o644",
+      "source": "docs/specs/domain-model.md",
+      "sourceSha256": "7a8e238ecd5fcf52b75af47778ce011b1c5df490d9f22e87f68bc5c769abe41e",
+      "importSha256": "7a8e238ecd5fcf52b75af47778ce011b1c5df490d9f22e87f68bc5c769abe41e",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "docs/specs/observability-traceability.md",
+      "mode": "0o644",
+      "source": "docs/specs/observability-traceability.md",
+      "sourceSha256": "2a10b559e58ba62fe48ef1f835e356ffb71186df74226186b6a81714a22c6f3f",
+      "importSha256": "2a10b559e58ba62fe48ef1f835e356ffb71186df74226186b6a81714a22c6f3f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "docs/specs/schema-decisions.md",
+      "mode": "0o644",
+      "source": "docs/specs/schema-decisions.md",
+      "sourceSha256": "4f1838b5dca1efa51dbf94ffd006ffcaece200ff645282f43e63f0e240fde538",
+      "importSha256": "4f1838b5dca1efa51dbf94ffd006ffcaece200ff645282f43e63f0e240fde538",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "eslint.config.mjs",
+      "mode": "0o644",
+      "source": "eslint.config.mjs",
+      "sourceSha256": "d2373e837d9b5e121ae261c047d65a22c216b1ea63027b5b54261381d7102807",
+      "importSha256": "d2373e837d9b5e121ae261c047d65a22c216b1ea63027b5b54261381d7102807",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "frontend/Dockerfile",
+      "mode": "0o644",
+      "source": "frontend/Dockerfile",
+      "sourceSha256": "b720b5c7ea428ffbb707339d1cb8259e1d20df2c7555143a1cfcb26aca0b5086",
+      "importSha256": "b720b5c7ea428ffbb707339d1cb8259e1d20df2c7555143a1cfcb26aca0b5086",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "frontend/README.md",
+      "mode": "0o644",
+      "source": "frontend/README.md",
+      "sourceSha256": "0291b37c02117c1178d10e3807721997eb8c219a69ab4a4428114716a9777cd5",
+      "importSha256": "82c5e274e8731a09dd1d09daee163b573743588edad75235886567b44cce5786",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "frontend/api.js",
+      "mode": "0o644",
+      "source": "frontend/api.js",
+      "sourceSha256": "f0dac238b745b9d540fb54dd79c5aee8f8664b106b9b8c01619e72de62a3fdec",
+      "importSha256": "f0dac238b745b9d540fb54dd79c5aee8f8664b106b9b8c01619e72de62a3fdec",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "frontend/app.js",
+      "mode": "0o644",
+      "source": "frontend/app.js",
+      "sourceSha256": "541cc7d4d2c4a59b865132f7cd5be2d81b4cac1122ecf260036c70aafae0f02d",
+      "importSha256": "541cc7d4d2c4a59b865132f7cd5be2d81b4cac1122ecf260036c70aafae0f02d",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "frontend/appointments.js",
+      "mode": "0o644",
+      "source": "frontend/appointments.js",
+      "sourceSha256": "555c4ead6dcf6e09780c0812c04243e39951c42d3c6839cdf53d35fa81b8349c",
+      "importSha256": "555c4ead6dcf6e09780c0812c04243e39951c42d3c6839cdf53d35fa81b8349c",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "frontend/billing.js",
+      "mode": "0o644",
+      "source": "frontend/billing.js",
+      "sourceSha256": "5a171dc4b019e74a35ae92d60ba0d027322dfdaab7b97a0957cdf25a0b96a97b",
+      "importSha256": "5a171dc4b019e74a35ae92d60ba0d027322dfdaab7b97a0957cdf25a0b96a97b",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "frontend/index.html",
+      "mode": "0o644",
+      "source": "frontend/index.html",
+      "sourceSha256": "7c343c1286b2be6b5a741fe8a4675a2b807d7ec608044aa9188e6cfecc361e3b",
+      "importSha256": "7c343c1286b2be6b5a741fe8a4675a2b807d7ec608044aa9188e6cfecc361e3b",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "frontend/package.json",
+      "mode": "0o644",
+      "source": "frontend/package.json",
+      "sourceSha256": "4975bc2fb1d0ea0652f4504c7885818587f250f9798cc782d113d2c39b5ee585",
+      "importSha256": "4975bc2fb1d0ea0652f4504c7885818587f250f9798cc782d113d2c39b5ee585",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "frontend/reports.js",
+      "mode": "0o644",
+      "source": "frontend/reports.js",
+      "sourceSha256": "b4f7ace054c683bf914305cf86cebc91fbb40d9393d4a43850d71bfb4a21d389",
+      "importSha256": "b4f7ace054c683bf914305cf86cebc91fbb40d9393d4a43850d71bfb4a21d389",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "frontend/server.js",
+      "mode": "0o644",
+      "source": "frontend/server.js",
+      "sourceSha256": "450f6f5071e0ae128f1b7a6db7c9bbd58a3973c38881b4b5b575ef907237ffe0",
+      "importSha256": "450f6f5071e0ae128f1b7a6db7c9bbd58a3973c38881b4b5b575ef907237ffe0",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "frontend/setup",
+      "mode": "0o755",
+      "source": "frontend/setup",
+      "sourceSha256": "8e2d2792155052b62ca3f4ba70891df41cbc63c1a02c1b1c196aa76b915325d3",
+      "importSha256": "8e2d2792155052b62ca3f4ba70891df41cbc63c1a02c1b1c196aa76b915325d3",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "frontend/start",
+      "mode": "0o755",
+      "source": "frontend/start",
+      "sourceSha256": "cd9a4c344bef01addbcdc2b2044f97b0161461d8db2c87ee83ce70762684e025",
+      "importSha256": "cd9a4c344bef01addbcdc2b2044f97b0161461d8db2c87ee83ce70762684e025",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "frontend/ui.js",
+      "mode": "0o644",
+      "source": "frontend/ui.js",
+      "sourceSha256": "531fa2a9fbe7edde2a3e2b71988c122a541d3993feb73f8ee8d4dee3a015e954",
+      "importSha256": "531fa2a9fbe7edde2a3e2b71988c122a541d3993feb73f8ee8d4dee3a015e954",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "frontend/veterinarians.js",
+      "mode": "0o644",
+      "source": "frontend/veterinarians.js",
+      "sourceSha256": "f7dd37d2088cf1f6969943a87f9da590becd30bb243cfd617f90bfec25de9177",
+      "importSha256": "f7dd37d2088cf1f6969943a87f9da590becd30bb243cfd617f90bfec25de9177",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "frontend/visits.js",
+      "mode": "0o644",
+      "source": "frontend/visits.js",
+      "sourceSha256": "aee4269fa6e337be2800e9af9f1eb0180468fc0d9fe5ee5c0c55a11c32bc354e",
+      "importSha256": "aee4269fa6e337be2800e9af9f1eb0180468fc0d9fe5ee5c0c55a11c32bc354e",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "package.json",
+      "mode": "0o644",
+      "source": "package.json",
+      "sourceSha256": "dcd9892baf2bc265206bbdf29eae71c8fe3b45ed32f9ef2fdf86c10d5cb04672",
+      "importSha256": "cf3daec70af7cacb43132fc6fc83662c085050bad9fdf1d66c07fc6d4767bd7d",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "services/checkout/Dockerfile",
+      "mode": "0o644",
+      "source": "services/checkout/Dockerfile",
+      "sourceSha256": "bf9a3779923520bc0db7d8b45ca0fc16aa49eb532b90c1bab2ece29b70e5f28a",
+      "importSha256": "bf9a3779923520bc0db7d8b45ca0fc16aa49eb532b90c1bab2ece29b70e5f28a",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/checkout/README.md",
+      "mode": "0o644",
+      "source": "services/checkout/README.md",
+      "sourceSha256": "0093228c324b43c97f0baf44fa557ef6491e3fedb16df6d7e54cafc3dc006a64",
+      "importSha256": "74ae2fe977e9429a0a9f05ba701b18e46eac2a1ab6ca5a0c7de3db8e7acedb88",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "services/checkout/package.json",
+      "mode": "0o644",
+      "source": "services/checkout/package.json",
+      "sourceSha256": "7f2c5225e9901a7e53636294dfbaa078df4ed0e03ace07f1abacc9302ae86379",
+      "importSha256": "7f2c5225e9901a7e53636294dfbaa078df4ed0e03ace07f1abacc9302ae86379",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/checkout/server.js",
+      "mode": "0o644",
+      "source": "services/checkout/server.js",
+      "sourceSha256": "08d5470d904a725895413585dd0da0b67816b25325028b5e5e572ada385767d0",
+      "importSha256": "08d5470d904a725895413585dd0da0b67816b25325028b5e5e572ada385767d0",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/checkout/setup",
+      "mode": "0o755",
+      "source": "services/checkout/setup",
+      "sourceSha256": "209f9955b2dbede29a83da853e6ce2a5e613e1c6526b0f8ea68947269b15d66d",
+      "importSha256": "209f9955b2dbede29a83da853e6ce2a5e613e1c6526b0f8ea68947269b15d66d",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/checkout/start",
+      "mode": "0o755",
+      "source": "services/checkout/start",
+      "sourceSha256": "cd9a4c344bef01addbcdc2b2044f97b0161461d8db2c87ee83ce70762684e025",
+      "importSha256": "cd9a4c344bef01addbcdc2b2044f97b0161461d8db2c87ee83ce70762684e025",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/customer/Dockerfile",
+      "mode": "0o644",
+      "source": "services/customer/Dockerfile",
+      "sourceSha256": "174abdd9570ee7b42d5499bc16dd878d83fca3c8e6a88a8e928927aa0219c2b0",
+      "importSha256": "174abdd9570ee7b42d5499bc16dd878d83fca3c8e6a88a8e928927aa0219c2b0",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/customer/README.md",
+      "mode": "0o644",
+      "source": "services/customer/README.md",
+      "sourceSha256": "e233b11e7d643e7e393ef555daddb744a087ea71333cd0c254ef55a6d3560211",
+      "importSha256": "7c7bb36164f76ef9293dd0706c5c239ea199877665e5a1678648bfa4a44473b9",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "services/customer/package.json",
+      "mode": "0o644",
+      "source": "services/customer/package.json",
+      "sourceSha256": "6565fb8ecc95e2611327a7b3dc531281dbbb1b59695e6742d2e6ad66fcc7f57c",
+      "importSha256": "6565fb8ecc95e2611327a7b3dc531281dbbb1b59695e6742d2e6ad66fcc7f57c",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/customer/server.js",
+      "mode": "0o644",
+      "source": "services/customer/server.js",
+      "sourceSha256": "b4bdeb65a7fca8a07f4ed96e3c481eeeb258907e02ec03f0e67d71b18a0617d9",
+      "importSha256": "b4bdeb65a7fca8a07f4ed96e3c481eeeb258907e02ec03f0e67d71b18a0617d9",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/customer/setup",
+      "mode": "0o755",
+      "source": "services/customer/setup",
+      "sourceSha256": "209f9955b2dbede29a83da853e6ce2a5e613e1c6526b0f8ea68947269b15d66d",
+      "importSha256": "209f9955b2dbede29a83da853e6ce2a5e613e1c6526b0f8ea68947269b15d66d",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/customer/start",
+      "mode": "0o755",
+      "source": "services/customer/start",
+      "sourceSha256": "cd9a4c344bef01addbcdc2b2044f97b0161461d8db2c87ee83ce70762684e025",
+      "importSha256": "cd9a4c344bef01addbcdc2b2044f97b0161461d8db2c87ee83ce70762684e025",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/platform/README.md",
+      "mode": "0o644",
+      "source": "services/platform/README.md",
+      "sourceSha256": "a9ae9ff48bc63c1b60e630534f9136c158151fafb518cbe821ad20c66b89fca5",
+      "importSha256": "a9ae9ff48bc63c1b60e630534f9136c158151fafb518cbe821ad20c66b89fca5",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/platform/package-lock.json",
+      "mode": "0o644",
+      "source": "services/platform/package-lock.json",
+      "sourceSha256": "946023970037980d512b4fbc60e94b96e17030aee2b1dd44115185cbab4e245f",
+      "importSha256": "946023970037980d512b4fbc60e94b96e17030aee2b1dd44115185cbab4e245f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/platform/package.json",
+      "mode": "0o644",
+      "source": "services/platform/package.json",
+      "sourceSha256": "7ed27f567315ab5160dd79b33fa39f296b6a7fdde3658dcaeaf2c377ebb3519a",
+      "importSha256": "7ed27f567315ab5160dd79b33fa39f296b6a7fdde3658dcaeaf2c377ebb3519a",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/platform/runtime.js",
+      "mode": "0o644",
+      "source": "services/platform/runtime.js",
+      "sourceSha256": "03fdef726be9e70d47bb952c53b09157e3f950fda3808df66bf7ce6bfe02229c",
+      "importSha256": "03fdef726be9e70d47bb952c53b09157e3f950fda3808df66bf7ce6bfe02229c",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/reservation/Dockerfile",
+      "mode": "0o644",
+      "source": "services/reservation/Dockerfile",
+      "sourceSha256": "bb54cee2710636b9a1b9e086c83005f9bc0401b84403f0600f57d7d164792868",
+      "importSha256": "bb54cee2710636b9a1b9e086c83005f9bc0401b84403f0600f57d7d164792868",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/reservation/README.md",
+      "mode": "0o644",
+      "source": "services/reservation/README.md",
+      "sourceSha256": "1c1a1d001e84bab09e1822327d92ec34f6acd5d394a2436fed150ffb1e49db1b",
+      "importSha256": "e33ba48e558bcbee1c7ee5341105e01188ee7704f4e1d60767b9c34386f6f99e",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "services/reservation/package.json",
+      "mode": "0o644",
+      "source": "services/reservation/package.json",
+      "sourceSha256": "f1074594b002856e6e81fcb8d725dcdfbedd6d9f011bf028846b1a005b0f3254",
+      "importSha256": "f1074594b002856e6e81fcb8d725dcdfbedd6d9f011bf028846b1a005b0f3254",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/reservation/server.js",
+      "mode": "0o644",
+      "source": "services/reservation/server.js",
+      "sourceSha256": "48aa02a3632aca0874d21f641ed63d2f8f5a11f4e7ea2c4f87b49506a690bf70",
+      "importSha256": "48aa02a3632aca0874d21f641ed63d2f8f5a11f4e7ea2c4f87b49506a690bf70",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/reservation/setup",
+      "mode": "0o755",
+      "source": "services/reservation/setup",
+      "sourceSha256": "209f9955b2dbede29a83da853e6ce2a5e613e1c6526b0f8ea68947269b15d66d",
+      "importSha256": "209f9955b2dbede29a83da853e6ce2a5e613e1c6526b0f8ea68947269b15d66d",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/reservation/start",
+      "mode": "0o755",
+      "source": "services/reservation/start",
+      "sourceSha256": "cd9a4c344bef01addbcdc2b2044f97b0161461d8db2c87ee83ce70762684e025",
+      "importSha256": "cd9a4c344bef01addbcdc2b2044f97b0161461d8db2c87ee83ce70762684e025",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/veterinarian-services/Dockerfile",
+      "mode": "0o644",
+      "source": "services/veterinarian-services/Dockerfile",
+      "sourceSha256": "d47b43597c662e3f1439dc050b5bdde6779a59853bd0aac398fb759dc234377a",
+      "importSha256": "d47b43597c662e3f1439dc050b5bdde6779a59853bd0aac398fb759dc234377a",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/veterinarian-services/README.md",
+      "mode": "0o644",
+      "source": "services/veterinarian-services/README.md",
+      "sourceSha256": "97e03f8b5fea58fd1d0fb43938fcd83240a28fdfaec126a130c4c53e57cdce32",
+      "importSha256": "a176deb4e2942d6cb41a29e18cc532e545dc09cf303745b4b6fe7e62b4bb91d2",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "services/veterinarian-services/package.json",
+      "mode": "0o644",
+      "source": "services/veterinarian-services/package.json",
+      "sourceSha256": "39428053109c9679975c061f13d41f06c8f4b79a3d1f02e3bab1e8f5c622247b",
+      "importSha256": "39428053109c9679975c061f13d41f06c8f4b79a3d1f02e3bab1e8f5c622247b",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/veterinarian-services/server.js",
+      "mode": "0o644",
+      "source": "services/veterinarian-services/server.js",
+      "sourceSha256": "73bff783f281016d996be1ae9b2f4ec6279a3810a53754a009b6bd4b46578dcc",
+      "importSha256": "73bff783f281016d996be1ae9b2f4ec6279a3810a53754a009b6bd4b46578dcc",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/veterinarian-services/setup",
+      "mode": "0o755",
+      "source": "services/veterinarian-services/setup",
+      "sourceSha256": "209f9955b2dbede29a83da853e6ce2a5e613e1c6526b0f8ea68947269b15d66d",
+      "importSha256": "209f9955b2dbede29a83da853e6ce2a5e613e1c6526b0f8ea68947269b15d66d",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "services/veterinarian-services/start",
+      "mode": "0o755",
+      "source": "services/veterinarian-services/start",
+      "sourceSha256": "cd9a4c344bef01addbcdc2b2044f97b0161461d8db2c87ee83ce70762684e025",
+      "importSha256": "cd9a4c344bef01addbcdc2b2044f97b0161461d8db2c87ee83ce70762684e025",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/README.md",
+      "mode": "0o644",
+      "source": "spec/README.md",
+      "sourceSha256": "21994e1473cb221cf92bb9a8723c04c01d101b137b1a7becffafacb121364fa4",
+      "importSha256": "21994e1473cb221cf92bb9a8723c04c01d101b137b1a7becffafacb121364fa4",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/contracts/README.md",
+      "mode": "0o644",
+      "source": "spec/contracts/README.md",
+      "sourceSha256": "722412f1a2b843a91cbd2d6bffd5fcd10312fe8b0c689633edc1d56da204effa",
+      "importSha256": "722412f1a2b843a91cbd2d6bffd5fcd10312fe8b0c689633edc1d56da204effa",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/contracts/auth-contract.md",
+      "mode": "0o644",
+      "source": "spec/contracts/auth-contract.md",
+      "sourceSha256": "26d8d1045cdc28c3ec024d697d6e4d3017e6f12acd425869adf097965a6f60ad",
+      "importSha256": "26d8d1045cdc28c3ec024d697d6e4d3017e6f12acd425869adf097965a6f60ad",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/contracts/auth.openapi.json",
+      "mode": "0o644",
+      "source": "spec/contracts/auth.openapi.json",
+      "sourceSha256": "0577061d3d05dbf30983850e1ced8c014db83aae28ad37f7e73d0b1a79b0162b",
+      "importSha256": "0577061d3d05dbf30983850e1ced8c014db83aae28ad37f7e73d0b1a79b0162b",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/contracts/checkout.openapi.json",
+      "mode": "0o644",
+      "source": "spec/contracts/checkout.openapi.json",
+      "sourceSha256": "d369055318ae8347e42344d74a8d1472e99cb151bd60b978c9ab75867d7b997f",
+      "importSha256": "d369055318ae8347e42344d74a8d1472e99cb151bd60b978c9ab75867d7b997f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/contracts/common.openapi.json",
+      "mode": "0o644",
+      "source": "spec/contracts/common.openapi.json",
+      "sourceSha256": "360f4948b603ed3706cbd75ed8aa1ca2808933f19a65a43bf174254040a1c93c",
+      "importSha256": "360f4948b603ed3706cbd75ed8aa1ca2808933f19a65a43bf174254040a1c93c",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/contracts/customer.openapi.json",
+      "mode": "0o644",
+      "source": "spec/contracts/customer.openapi.json",
+      "sourceSha256": "e5e368e467d005848fc43a9049dffac89e20e8325895345715dc9af30c998c8f",
+      "importSha256": "e5e368e467d005848fc43a9049dffac89e20e8325895345715dc9af30c998c8f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/contracts/domain.openapi.json",
+      "mode": "0o644",
+      "source": "spec/contracts/domain.openapi.json",
+      "sourceSha256": "697f03384558bf259fb838b6f8eac344ee375033f60085cd862320307df3b606",
+      "importSha256": "697f03384558bf259fb838b6f8eac344ee375033f60085cd862320307df3b606",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/contracts/payment-provider.openapi.json",
+      "mode": "0o644",
+      "source": "spec/contracts/payment-provider.openapi.json",
+      "sourceSha256": "f94cc935c0879e9593f4793d05ea68911f96c45ecf4577bd8d367361626526a1",
+      "importSha256": "f94cc935c0879e9593f4793d05ea68911f96c45ecf4577bd8d367361626526a1",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/contracts/reservation.openapi.json",
+      "mode": "0o644",
+      "source": "spec/contracts/reservation.openapi.json",
+      "sourceSha256": "a23348e8fc1bdb65247a7826e9dec80390a59100597bdd5d2fb75d784d94bf8a",
+      "importSha256": "a23348e8fc1bdb65247a7826e9dec80390a59100597bdd5d2fb75d784d94bf8a",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/contracts/runtime-contract.md",
+      "mode": "0o644",
+      "source": "spec/contracts/runtime-contract.md",
+      "sourceSha256": "2cf1e64517caff4d2a620b295c40c9779762a2aa69069112fa14d57465f57dc4",
+      "importSha256": "2cf1e64517caff4d2a620b295c40c9779762a2aa69069112fa14d57465f57dc4",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/contracts/veterinarian-services.openapi.json",
+      "mode": "0o644",
+      "source": "spec/contracts/veterinarian-services.openapi.json",
+      "sourceSha256": "61a6568a92394564db8bb2982421adcaeaa49122786a75f633d6680c1624cd8d",
+      "importSha256": "61a6568a92394564db8bb2982421adcaeaa49122786a75f633d6680c1624cd8d",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/cucumber.cjs",
+      "mode": "0o644",
+      "source": "spec/cucumber.cjs",
+      "sourceSha256": "195014bc62f9720c8461d32b8f879a142942512b5fce59322970fac776d46c83",
+      "importSha256": "195014bc62f9720c8461d32b8f879a142942512b5fce59322970fac776d46c83",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/README.md",
+      "mode": "0o644",
+      "source": "spec/delivery/README.md",
+      "sourceSha256": "521f36ecd55da1e1ff145a1b9fbd2768df85bcf4af93f3f3b07a7d35eee3f81c",
+      "importSha256": "6d2ee87d52ca53032a69a005dd2cf61a9cbdeb4706f5b7c8ab36ce6b77f88a94",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "spec/delivery/catalog.yaml",
+      "mode": "0o644",
+      "source": "spec/delivery/catalog.yaml",
+      "sourceSha256": "ec96d1b390553dad0d31b9ecfb7c4b43990c43fca83bfb82d50b2334076dfd3c",
+      "importSha256": "ec96d1b390553dad0d31b9ecfb7c4b43990c43fca83bfb82d50b2334076dfd3c",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/contract.md",
+      "mode": "0o644",
+      "source": "spec/delivery/contract.md",
+      "sourceSha256": "d46fd4944fd045ca82c9357d1faed12561883b2372c446498c28bf19dd74de64",
+      "importSha256": "d46fd4944fd045ca82c9357d1faed12561883b2372c446498c28bf19dd74de64",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/contracts/ai-provenance.v1.schema.json",
+      "mode": "0o644",
+      "source": "spec/delivery/contracts/ai-provenance.v1.schema.json",
+      "sourceSha256": "4651460320fb597b4694e016b5ad034f0d42b011bf8215a2a36a3a568d9e27a4",
+      "importSha256": "4651460320fb597b4694e016b5ad034f0d42b011bf8215a2a36a3a568d9e27a4",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/contracts/change-evidence.v1.schema.json",
+      "mode": "0o644",
+      "source": "spec/delivery/contracts/change-evidence.v1.schema.json",
+      "sourceSha256": "ff2527ebdba6db95462e5f3eca3aaca536628308d1db6b3231155f5c4f0303f1",
+      "importSha256": "ff2527ebdba6db95462e5f3eca3aaca536628308d1db6b3231155f5c4f0303f1",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/contracts/dora-events.v1.schema.json",
+      "mode": "0o644",
+      "source": "spec/delivery/contracts/dora-events.v1.schema.json",
+      "sourceSha256": "e59d7817a1ce7165c689caca6cb2c44e0309514226ab227a6a39305df1a84a8b",
+      "importSha256": "e59d7817a1ce7165c689caca6cb2c44e0309514226ab227a6a39305df1a84a8b",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/contracts/dora-metrics.v1.schema.json",
+      "mode": "0o644",
+      "source": "spec/delivery/contracts/dora-metrics.v1.schema.json",
+      "sourceSha256": "8ad59e98dce3d91939779684ff793979b3d2dc242eba92319f3f73b5e9943533",
+      "importSha256": "8ad59e98dce3d91939779684ff793979b3d2dc242eba92319f3f73b5e9943533",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/contracts/release-record.v1.schema.json",
+      "mode": "0o644",
+      "source": "spec/delivery/contracts/release-record.v1.schema.json",
+      "sourceSha256": "8a78b35033843453935f70e72820a83c1e6a1d2644baaaca45b4986d83e1bc27",
+      "importSha256": "8a78b35033843453935f70e72820a83c1e6a1d2644baaaca45b4986d83e1bc27",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/contracts/review-decision.v1.schema.json",
+      "mode": "0o644",
+      "source": "spec/delivery/contracts/review-decision.v1.schema.json",
+      "sourceSha256": "b2ffa972f04cba8835ac3af6afd4ad86b56284fb5a360255deac635d61568dc6",
+      "importSha256": "b2ffa972f04cba8835ac3af6afd4ad86b56284fb5a360255deac635d61568dc6",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/contracts/review-facts.v1.schema.json",
+      "mode": "0o644",
+      "source": "spec/delivery/contracts/review-facts.v1.schema.json",
+      "sourceSha256": "8f7642e4f2127a2e14d8bbc97d7afae12e0c5c48bf3ff5e837d912b5ab73f9d8",
+      "importSha256": "8f7642e4f2127a2e14d8bbc97d7afae12e0c5c48bf3ff5e837d912b5ab73f9d8",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/cucumber.cjs",
+      "mode": "0o644",
+      "source": "spec/delivery/cucumber.cjs",
+      "sourceSha256": "e85175cc1a3f51853abc638de094ee3e0b1bacc94a317b4b3ccc537f06f39446",
+      "importSha256": "e85175cc1a3f51853abc638de094ee3e0b1bacc94a317b4b3ccc537f06f39446",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/dora.md",
+      "mode": "0o644",
+      "source": "spec/delivery/dora.md",
+      "sourceSha256": "57ac2e5c50718d0e2e037eefd281494c4078eb8cea0134eb15fd44278ccb6845",
+      "importSha256": "57ac2e5c50718d0e2e037eefd281494c4078eb8cea0134eb15fd44278ccb6845",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/features/agent-governance/live-governance.feature",
+      "mode": "0o644",
+      "source": "spec/delivery/features/agent-governance/live-governance.feature",
+      "sourceSha256": "9d3576635107e5d845dc69b7addda00b46846ab9b8ad1f7635a07db2f8f94d0a",
+      "importSha256": "9d3576635107e5d845dc69b7addda00b46846ab9b8ad1f7635a07db2f8f94d0a",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/features/agent-governance/provenance.feature",
+      "mode": "0o644",
+      "source": "spec/delivery/features/agent-governance/provenance.feature",
+      "sourceSha256": "d3c4dd22dd703a2e224746c56036cd29cbc32621436306ee01a6f2369c4a9328",
+      "importSha256": "d3c4dd22dd703a2e224746c56036cd29cbc32621436306ee01a6f2369c4a9328",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/features/agent-governance/review-policy.feature",
+      "mode": "0o644",
+      "source": "spec/delivery/features/agent-governance/review-policy.feature",
+      "sourceSha256": "da8ab31d1a879d1a8068b34012fdabc116a25750f8c101fde6b15d92ad942ced",
+      "importSha256": "da8ab31d1a879d1a8068b34012fdabc116a25750f8c101fde6b15d92ad942ced",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/features/catalog/catalog.feature",
+      "mode": "0o644",
+      "source": "spec/delivery/features/catalog/catalog.feature",
+      "sourceSha256": "27128ed194bc50293a148c232325f90f744e8e20ebd7443e8a2f84c4ec109346",
+      "importSha256": "27128ed194bc50293a148c232325f90f744e8e20ebd7443e8a2f84c4ec109346",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/features/cost/budget.feature",
+      "mode": "0o644",
+      "source": "spec/delivery/features/cost/budget.feature",
+      "sourceSha256": "83184290586c531a1a4de10e13598a9e6c824a2b178ca86bdf072ee8fd1ce690",
+      "importSha256": "83184290586c531a1a4de10e13598a9e6c824a2b178ca86bdf072ee8fd1ce690",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/features/evidence/release-record.feature",
+      "mode": "0o644",
+      "source": "spec/delivery/features/evidence/release-record.feature",
+      "sourceSha256": "6cb8ea3a918d217851623d51417f115c4b9e79cc58eac7886bd6a236b51ce934",
+      "importSha256": "6cb8ea3a918d217851623d51417f115c4b9e79cc58eac7886bd6a236b51ce934",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/features/infrastructure/oidc-trust.feature",
+      "mode": "0o644",
+      "source": "spec/delivery/features/infrastructure/oidc-trust.feature",
+      "sourceSha256": "e3685fa97d7888fa0216bef0242afcb4918bef793fecbec3bbdb582962f3dfbe",
+      "importSha256": "e3685fa97d7888fa0216bef0242afcb4918bef793fecbec3bbdb582962f3dfbe",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/features/infrastructure/templates.feature",
+      "mode": "0o644",
+      "source": "spec/delivery/features/infrastructure/templates.feature",
+      "sourceSha256": "8ad35dc5866b9a44f94c7ec1da881f968ae51b123b13d940719407ab36ce9f54",
+      "importSha256": "8ad35dc5866b9a44f94c7ec1da881f968ae51b123b13d940719407ab36ce9f54",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/features/local/compose.feature",
+      "mode": "0o644",
+      "source": "spec/delivery/features/local/compose.feature",
+      "sourceSha256": "b660bd7892a03496846d033763e0314b73a7de57d402789ff51356c101bbbfa8",
+      "importSha256": "b660bd7892a03496846d033763e0314b73a7de57d402789ff51356c101bbbfa8",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/features/local/images.feature",
+      "mode": "0o644",
+      "source": "spec/delivery/features/local/images.feature",
+      "sourceSha256": "01fa497649b4de90e419274bcbf1dc8ebf668d2c6a4905bcfde09ed3133f40c0",
+      "importSha256": "01fa497649b4de90e419274bcbf1dc8ebf668d2c6a4905bcfde09ed3133f40c0",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/features/organization/scp.feature",
+      "mode": "0o644",
+      "source": "spec/delivery/features/organization/scp.feature",
+      "sourceSha256": "8b1137ca65606bd81655f36c0e52994ecd8762027497a854deffc675fc9759a3",
+      "importSha256": "8b1137ca65606bd81655f36c0e52994ecd8762027497a854deffc675fc9759a3",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/features/pipeline/workflows.feature",
+      "mode": "0o644",
+      "source": "spec/delivery/features/pipeline/workflows.feature",
+      "sourceSha256": "cfe912a32746b92782194aa4c03335d1533346378b203cb3770819b539ece612",
+      "importSha256": "cfe912a32746b92782194aa4c03335d1533346378b203cb3770819b539ece612",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/package-lock.json",
+      "mode": "0o644",
+      "source": "spec/delivery/package-lock.json",
+      "sourceSha256": "cb1ec3969fd92ca16893fc2dc94024d9e8351e6f2ad17b0ada8e899d4ab8afbb",
+      "importSha256": "cb1ec3969fd92ca16893fc2dc94024d9e8351e6f2ad17b0ada8e899d4ab8afbb",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/package.json",
+      "mode": "0o644",
+      "source": "spec/delivery/package.json",
+      "sourceSha256": "6100251db4f5ef78cf02bfce040077da6a5aac7c46d4f94bf49aeaad83761dc4",
+      "importSha256": "6100251db4f5ef78cf02bfce040077da6a5aac7c46d4f94bf49aeaad83761dc4",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/policy/iam-least-privilege.guard",
+      "mode": "0o644",
+      "source": "spec/delivery/policy/iam-least-privilege.guard",
+      "sourceSha256": "db357e08114d34b8c241309693113ef42369f492d41f0a483289b5881f66e7f0",
+      "importSha256": "db357e08114d34b8c241309693113ef42369f492d41f0a483289b5881f66e7f0",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/policy/log-groups.guard",
+      "mode": "0o644",
+      "source": "spec/delivery/policy/log-groups.guard",
+      "sourceSha256": "808a46a8148ca4893b2cf8c2f781dc403e29cef73642c8037fe4d276fd7c6912",
+      "importSha256": "808a46a8148ca4893b2cf8c2f781dc403e29cef73642c8037fe4d276fd7c6912",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/policy/task-hardening.guard",
+      "mode": "0o644",
+      "source": "spec/delivery/policy/task-hardening.guard",
+      "sourceSha256": "24091710d71bb26f1ba2b1b9651d3ff7103f21d23005cbbbee28a46c10cac1d8",
+      "importSha256": "24091710d71bb26f1ba2b1b9651d3ff7103f21d23005cbbbee28a46c10cac1d8",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/policy/tests/iam-least-privilege_tests.yaml",
+      "mode": "0o644",
+      "source": "spec/delivery/policy/tests/iam-least-privilege_tests.yaml",
+      "sourceSha256": "2eba6aa120ac945c562b50913ca4de35e39042daacf17fbc8e7c292eb66412a8",
+      "importSha256": "2eba6aa120ac945c562b50913ca4de35e39042daacf17fbc8e7c292eb66412a8",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/policy/tests/log-groups_tests.yaml",
+      "mode": "0o644",
+      "source": "spec/delivery/policy/tests/log-groups_tests.yaml",
+      "sourceSha256": "56d11e3eee8cc29e7a8a0c3ae4d31106947e0fcd1bdeaa96579fa8b375c5ca7f",
+      "importSha256": "56d11e3eee8cc29e7a8a0c3ae4d31106947e0fcd1bdeaa96579fa8b375c5ca7f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/policy/tests/task-hardening_tests.yaml",
+      "mode": "0o644",
+      "source": "spec/delivery/policy/tests/task-hardening_tests.yaml",
+      "sourceSha256": "a28676e986926fce1f3f484045511f0dca95c8a39ed995ec6b6adf4a47bfdd39",
+      "importSha256": "a28676e986926fce1f3f484045511f0dca95c8a39ed995ec6b6adf4a47bfdd39",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/review-policy.json",
+      "mode": "0o644",
+      "source": "spec/delivery/review-policy.json",
+      "sourceSha256": "c4ea19a797f857d9e70ec56cddfb85712a714d699101f11e1e06bec7ff9b158d",
+      "importSha256": "c4ea19a797f857d9e70ec56cddfb85712a714d699101f11e1e06bec7ff9b158d",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/root-of-trust.json",
+      "mode": "0o644",
+      "source": "spec/delivery/root-of-trust.json",
+      "sourceSha256": "14a4ee03540552f43ada8df2ab66254a3cdb76318742e1be54383e247e5e85a0",
+      "importSha256": "75c55489e85e596e9e30705dd8d92fcac4fb4c59c392802cc5fafd9cf5946451",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "spec/delivery/steps/catalog.steps.js",
+      "mode": "0o644",
+      "source": "spec/delivery/steps/catalog.steps.js",
+      "sourceSha256": "dbb9767fb8bd1e2ab5e8b43d644dd0c2669601bd2439b9078db479f20f43c46a",
+      "importSha256": "dbb9767fb8bd1e2ab5e8b43d644dd0c2669601bd2439b9078db479f20f43c46a",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/steps/live.steps.js",
+      "mode": "0o644",
+      "source": "spec/delivery/steps/live.steps.js",
+      "sourceSha256": "98cb9421bbac0c5e7dc2ff6502b0ca83a473cb5e1e8588f6e713c79c19bd720c",
+      "importSha256": "98cb9421bbac0c5e7dc2ff6502b0ca83a473cb5e1e8588f6e713c79c19bd720c",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/steps/review-policy.steps.js",
+      "mode": "0o644",
+      "source": "spec/delivery/steps/review-policy.steps.js",
+      "sourceSha256": "4921143e2cd7a1c08fef35c013465dd48bab3fa7c6d2987aabb7123cba47d159",
+      "importSha256": "4921143e2cd7a1c08fef35c013465dd48bab3fa7c6d2987aabb7123cba47d159",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/steps/static.steps.js",
+      "mode": "0o644",
+      "source": "spec/delivery/steps/static.steps.js",
+      "sourceSha256": "7d7f879fca99a2ea62a51d66aafb8788c1903ff006fdbaa917669510014adb4e",
+      "importSha256": "c14a160180627a2443cde4194fec9a0bf0849c72f9ca1556ebafa4aabce9cb78",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "spec/delivery/steps/support/repo.js",
+      "mode": "0o644",
+      "source": "spec/delivery/steps/support/repo.js",
+      "sourceSha256": "286ecd8796cb0bda3be0d330d911632525d4c5a6453c2b8d78f5ea2a09756dcc",
+      "importSha256": "286ecd8796cb0bda3be0d330d911632525d4c5a6453c2b8d78f5ea2a09756dcc",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/steps/support/templates.js",
+      "mode": "0o644",
+      "source": "spec/delivery/steps/support/templates.js",
+      "sourceSha256": "9c0df88a2e31dc1af2cd6046c39bb372851af9f561e7795455c246f03289c330",
+      "importSha256": "9c0df88a2e31dc1af2cd6046c39bb372851af9f561e7795455c246f03289c330",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/steps/template.steps.js",
+      "mode": "0o644",
+      "source": "spec/delivery/steps/template.steps.js",
+      "sourceSha256": "ffb19ccd3d25525d78f0b0ef7b85abc426f4587247e76fdb03a8f6c3308682c8",
+      "importSha256": "ffb19ccd3d25525d78f0b0ef7b85abc426f4587247e76fdb03a8f6c3308682c8",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/tools/awaiting-report.mjs",
+      "mode": "0o644",
+      "source": "spec/delivery/tools/awaiting-report.mjs",
+      "sourceSha256": "ed5a7718e251c0010d160b19d1bfdeb3629d0ac82ed03a6258dbe7b34ff3faae",
+      "importSha256": "ed5a7718e251c0010d160b19d1bfdeb3629d0ac82ed03a6258dbe7b34ff3faae",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/tools/catalog.mjs",
+      "mode": "0o644",
+      "source": "spec/delivery/tools/catalog.mjs",
+      "sourceSha256": "a6efbba465c71ce8fdef5d70a70f037e89eedb85f02c18a278d8676add23d817",
+      "importSha256": "a6efbba465c71ce8fdef5d70a70f037e89eedb85f02c18a278d8676add23d817",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/delivery/tools/render-catalog.mjs",
+      "mode": "0o644",
+      "source": "spec/delivery/tools/render-catalog.mjs",
+      "sourceSha256": "d4795c98556f5712df7c2bbeebcea23689f3e9fe04bcf26f31af44e8116b3114",
+      "importSha256": "d4795c98556f5712df7c2bbeebcea23689f3e9fe04bcf26f31af44e8116b3114",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/factory/petclinic/authority.json",
+      "mode": "0o644",
+      "source": "spec/factory/petclinic/authority.json",
+      "sourceSha256": "c1a886ca0b96bdc44a4a798aeaf0fabd40c0ee3c620de61beecffce7e53b55b4",
+      "importSha256": "c1a886ca0b96bdc44a4a798aeaf0fabd40c0ee3c620de61beecffce7e53b55b4",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/factory/petclinic/config.json",
+      "mode": "0o644",
+      "source": "spec/factory/petclinic/config.json",
+      "sourceSha256": "70d7b899f2ae2f00ef172b7b954d066d7f773a9ef5dcd733a17f9737e89e792a",
+      "importSha256": "6d35092543feff0c2c03824eb00fdd91b30b3e5eac3523757ee9f34c1b9d58f5",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "spec/factory/petclinic/policy.json",
+      "mode": "0o644",
+      "source": "spec/factory/petclinic/policy.json",
+      "sourceSha256": "b5a4258cbe16a3bf03b42588785f73dd824a86eb7dda495034ed6fb1d18a976c",
+      "importSha256": "b5a4258cbe16a3bf03b42588785f73dd824a86eb7dda495034ed6fb1d18a976c",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/fakes/payment/README.md",
+      "mode": "0o644",
+      "source": "spec/fakes/payment/README.md",
+      "sourceSha256": "1e01a101cbae5f743768f7d2f15fd93bb72535d97c26869cd389c972b3641df3",
+      "importSha256": "1e01a101cbae5f743768f7d2f15fd93bb72535d97c26869cd389c972b3641df3",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/fakes/payment/package.json",
+      "mode": "0o644",
+      "source": "spec/fakes/payment/package.json",
+      "sourceSha256": "666bb75c43ac834c57177692e197ea6eea9a2eff07dbb8ee707fb18c4c0a6fde",
+      "importSha256": "666bb75c43ac834c57177692e197ea6eea9a2eff07dbb8ee707fb18c4c0a6fde",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/fakes/payment/server.js",
+      "mode": "0o644",
+      "source": "spec/fakes/payment/server.js",
+      "sourceSha256": "16bd7d1b93032ba0e047c697c47d6116bae18b3fd538c95dfe455ad60f7dd892",
+      "importSha256": "16bd7d1b93032ba0e047c697c47d6116bae18b3fd538c95dfe455ad60f7dd892",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/fakes/payment/setup",
+      "mode": "0o755",
+      "source": "spec/fakes/payment/setup",
+      "sourceSha256": "751ecc26add2ffce1c5857f6e02dadb550e3153579e381a6ac9b894dd42ab5a0",
+      "importSha256": "751ecc26add2ffce1c5857f6e02dadb550e3153579e381a6ac9b894dd42ab5a0",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/fakes/payment/start",
+      "mode": "0o755",
+      "source": "spec/fakes/payment/start",
+      "sourceSha256": "2e0d5e67478b5c51600bf8b40ea070ceee046b92c22aee121ded37091ec0cd7d",
+      "importSha256": "2e0d5e67478b5c51600bf8b40ea070ceee046b92c22aee121ded37091ec0cd7d",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/checkout/booking-fee.feature",
+      "mode": "0o644",
+      "source": "spec/features/checkout/booking-fee.feature",
+      "sourceSha256": "5694c343ff3e3f2a5dcda25d19c974abf55b533c8b408701d791d824696a2d48",
+      "importSha256": "5694c343ff3e3f2a5dcda25d19c974abf55b533c8b408701d791d824696a2d48",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/checkout/finalize-bill.feature",
+      "mode": "0o644",
+      "source": "spec/features/checkout/finalize-bill.feature",
+      "sourceSha256": "a6e2a2900e5bed61c310826bc3046db3b3776aedea4a76ee77a7f6e23d6dd122",
+      "importSha256": "a6e2a2900e5bed61c310826bc3046db3b3776aedea4a76ee77a7f6e23d6dd122",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/checkout/payment-idempotency.feature",
+      "mode": "0o644",
+      "source": "spec/features/checkout/payment-idempotency.feature",
+      "sourceSha256": "50542eed9adf36aff2ee742a8ca72f978c64819fc7c7f2af099439569e3854fe",
+      "importSha256": "50542eed9adf36aff2ee742a8ca72f978c64819fc7c7f2af099439569e3854fe",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/checkout/promotion.feature",
+      "mode": "0o644",
+      "source": "spec/features/checkout/promotion.feature",
+      "sourceSha256": "a5546fe340d9da4efc8a3a3d6b061732cd42e99e3ded71a31b45253e190df645",
+      "importSha256": "a5546fe340d9da4efc8a3a3d6b061732cd42e99e3ded71a31b45253e190df645",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/checkout/visit-payment.feature",
+      "mode": "0o644",
+      "source": "spec/features/checkout/visit-payment.feature",
+      "sourceSha256": "4a39eee67104560d8e010b63a908e78eb2a6f5dca5466e537edc0e63a09b7859",
+      "importSha256": "4a39eee67104560d8e010b63a908e78eb2a6f5dca5466e537edc0e63a09b7859",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/customer/account-balance.feature",
+      "mode": "0o644",
+      "source": "spec/features/customer/account-balance.feature",
+      "sourceSha256": "290972e32d2e7e40debb2034ab0a51341643cdb447e1259f3f6e7e7b8c77e352",
+      "importSha256": "290972e32d2e7e40debb2034ab0a51341643cdb447e1259f3f6e7e7b8c77e352",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/customer/booking-eligibility.feature",
+      "mode": "0o644",
+      "source": "spec/features/customer/booking-eligibility.feature",
+      "sourceSha256": "c3101f9bc197227373e1927140661f9522b6378be34c682a3899e4fc90e80544",
+      "importSha256": "c3101f9bc197227373e1927140661f9522b6378be34c682a3899e4fc90e80544",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/customer/customer-profile.feature",
+      "mode": "0o644",
+      "source": "spec/features/customer/customer-profile.feature",
+      "sourceSha256": "684b72ac3fad5211ee1fba278bedb3e3d0a026eb0746f74530c312821c7ed221",
+      "importSha256": "684b72ac3fad5211ee1fba278bedb3e3d0a026eb0746f74530c312821c7ed221",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/customer/login.feature",
+      "mode": "0o644",
+      "source": "spec/features/customer/login.feature",
+      "sourceSha256": "9924eea75ed309da4afb98ecaa0cef9c4d9b49126f33938ece1c5fe4d75bbd0d",
+      "importSha256": "9924eea75ed309da4afb98ecaa0cef9c4d9b49126f33938ece1c5fe4d75bbd0d",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/customer/pets.feature",
+      "mode": "0o644",
+      "source": "spec/features/customer/pets.feature",
+      "sourceSha256": "0b751e7eb33025afe8c78d097e64c53a06a8ff8cfe955f56087d0b9c93da4b39",
+      "importSha256": "0b751e7eb33025afe8c78d097e64c53a06a8ff8cfe955f56087d0b9c93da4b39",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/customer/register-customer.feature",
+      "mode": "0o644",
+      "source": "spec/features/customer/register-customer.feature",
+      "sourceSha256": "1ce508cf9d33900bcd565a5c06d63247e08ee782d1cbad599c9b312117bd02c8",
+      "importSha256": "1ce508cf9d33900bcd565a5c06d63247e08ee782d1cbad599c9b312117bd02c8",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/frontend/clinic-browser.feature",
+      "mode": "0o644",
+      "source": "spec/features/frontend/clinic-browser.feature",
+      "sourceSha256": "76bfdda8a143e1bacbc4b676e0be2a97f6bf649b89772e8021f916ab3f8b9f80",
+      "importSha256": "76bfdda8a143e1bacbc4b676e0be2a97f6bf649b89772e8021f916ab3f8b9f80",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/performance/local-demo.feature",
+      "mode": "0o644",
+      "source": "spec/features/performance/local-demo.feature",
+      "sourceSha256": "e1faeaea110bd8718e73f2c0305138adbd89eab0799a08dbfe0a2cdda34d875b",
+      "importSha256": "e1faeaea110bd8718e73f2c0305138adbd89eab0799a08dbfe0a2cdda34d875b",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/reservation/accept-deny-reservation.feature",
+      "mode": "0o644",
+      "source": "spec/features/reservation/accept-deny-reservation.feature",
+      "sourceSha256": "552c946ad46c31c2c445170d95a36723d82837fbf1c177c9cc288bc7e58dbe87",
+      "importSha256": "552c946ad46c31c2c445170d95a36723d82837fbf1c177c9cc288bc7e58dbe87",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/reservation/calendar-availability.feature",
+      "mode": "0o644",
+      "source": "spec/features/reservation/calendar-availability.feature",
+      "sourceSha256": "acbf77d4adc099c817851553bb0242235efb635da76dca047c3a23cce3453d7e",
+      "importSha256": "acbf77d4adc099c817851553bb0242235efb635da76dca047c3a23cce3453d7e",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/reservation/cancel-reservation.feature",
+      "mode": "0o644",
+      "source": "spec/features/reservation/cancel-reservation.feature",
+      "sourceSha256": "87422ef58a9f82be4c154d4e4448184b2a335ddf296b6b1e9b3b95ce69628d0e",
+      "importSha256": "87422ef58a9f82be4c154d4e4448184b2a335ddf296b6b1e9b3b95ce69628d0e",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/reservation/complete-reservation.feature",
+      "mode": "0o644",
+      "source": "spec/features/reservation/complete-reservation.feature",
+      "sourceSha256": "a209a41d8547c24cdf44572caa710b7aec8e4d0aa5d2fa84aeeb0c6a83de0b64",
+      "importSha256": "a209a41d8547c24cdf44572caa710b7aec8e4d0aa5d2fa84aeeb0c6a83de0b64",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/reservation/correct-visit.feature",
+      "mode": "0o644",
+      "source": "spec/features/reservation/correct-visit.feature",
+      "sourceSha256": "66caf4a25fffeca6db99e975f74cfdfd764b899f5026389de93ea05049b2fb82",
+      "importSha256": "66caf4a25fffeca6db99e975f74cfdfd764b899f5026389de93ea05049b2fb82",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/reservation/manage-veterinarians.feature",
+      "mode": "0o644",
+      "source": "spec/features/reservation/manage-veterinarians.feature",
+      "sourceSha256": "357e781c1a96934cdba2a820c8b6ca3206012a2bb831cf1a1735184a28acf367",
+      "importSha256": "357e781c1a96934cdba2a820c8b6ca3206012a2bb831cf1a1735184a28acf367",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/reservation/reassign-veterinarian.feature",
+      "mode": "0o644",
+      "source": "spec/features/reservation/reassign-veterinarian.feature",
+      "sourceSha256": "21d52fa23106c78625479d6e774f53e1cd7153fdef56e254061c0546bd1f3041",
+      "importSha256": "21d52fa23106c78625479d6e774f53e1cd7153fdef56e254061c0546bd1f3041",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/reservation/record-visit.feature",
+      "mode": "0o644",
+      "source": "spec/features/reservation/record-visit.feature",
+      "sourceSha256": "02f1fdcc5bc311d4fd911c99412a154956fe58611570355fece48832fbccb5ba",
+      "importSha256": "02f1fdcc5bc311d4fd911c99412a154956fe58611570355fece48832fbccb5ba",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/reservation/request-reservation.feature",
+      "mode": "0o644",
+      "source": "spec/features/reservation/request-reservation.feature",
+      "sourceSha256": "966179af3cdc6b455db5ed2fe116335aedd03dee71a504ebef7c38536152833f",
+      "importSha256": "966179af3cdc6b455db5ed2fe116335aedd03dee71a504ebef7c38536152833f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/reservation/retired.feature",
+      "mode": "0o644",
+      "source": "spec/features/reservation/retired.feature",
+      "sourceSha256": "088dfb90cec97b072a2550c659b7f7ffc9eed2f97a664ddf3608032554bd1380",
+      "importSha256": "088dfb90cec97b072a2550c659b7f7ffc9eed2f97a664ddf3608032554bd1380",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/reservation/visits-missing-notes-report.feature",
+      "mode": "0o644",
+      "source": "spec/features/reservation/visits-missing-notes-report.feature",
+      "sourceSha256": "8be7398277955cbc0e04fb58328ae3c9b27c39e7df493e6be346fc5e9d56757c",
+      "importSha256": "8be7398277955cbc0e04fb58328ae3c9b27c39e7df493e6be346fc5e9d56757c",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/veterinarian-services/service-catalog.feature",
+      "mode": "0o644",
+      "source": "spec/features/veterinarian-services/service-catalog.feature",
+      "sourceSha256": "882d38716cc9e36effab07f97e7643ccc0ab9479f05802d33ee551031dbc3962",
+      "importSha256": "882d38716cc9e36effab07f97e7643ccc0ab9479f05802d33ee551031dbc3962",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/veterinarian-services/update-service.feature",
+      "mode": "0o644",
+      "source": "spec/features/veterinarian-services/update-service.feature",
+      "sourceSha256": "e468c3b64c223a6a8f13112388e3782f07db1ce4e6209e7899bdafb536df64a9",
+      "importSha256": "e468c3b64c223a6a8f13112388e3782f07db1ce4e6209e7899bdafb536df64a9",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/features/workflows/clinic-journeys.feature",
+      "mode": "0o644",
+      "source": "spec/features/workflows/clinic-journeys.feature",
+      "sourceSha256": "1488a35b52ff3a4c4cee73a3bca1c2076668dd10e7a21148599ec0f1ff0c2d22",
+      "importSha256": "1488a35b52ff3a4c4cee73a3bca1c2076668dd10e7a21148599ec0f1ff0c2d22",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/frontend/assets/README.md",
+      "mode": "0o644",
+      "source": "spec/frontend/assets/README.md",
+      "sourceSha256": "4667391919ad94e115f11bd0524a275809b99e4bc412647f102f7780867e28ca",
+      "importSha256": "4667391919ad94e115f11bd0524a275809b99e4bc412647f102f7780867e28ca",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/frontend/assets/cedar-paw.svg",
+      "mode": "0o644",
+      "source": "spec/frontend/assets/cedar-paw.svg",
+      "sourceSha256": "417e1309c4721902b1cc4a08766db92f8080c11de9a5260e81cad8ca9acf72be",
+      "importSha256": "417e1309c4721902b1cc4a08766db92f8080c11de9a5260e81cad8ca9acf72be",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/frontend/assets/fonts/LICENSE",
+      "mode": "0o644",
+      "source": "spec/frontend/assets/fonts/LICENSE",
+      "sourceSha256": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345",
+      "importSha256": "3b0a5fca3d17942cde889069889dedbbbd075e9b599968c82a95f4d944e9b345",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/frontend/assets/fonts/inter-latin-400-normal.woff2",
+      "mode": "0o644",
+      "source": "spec/frontend/assets/fonts/inter-latin-400-normal.woff2",
+      "sourceSha256": "8909904ab6c872eb994093482a88a28eca2cd95912d7b6fecd72103b0dc07edc",
+      "importSha256": "8909904ab6c872eb994093482a88a28eca2cd95912d7b6fecd72103b0dc07edc",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/frontend/assets/fonts/inter-latin-600-normal.woff2",
+      "mode": "0o644",
+      "source": "spec/frontend/assets/fonts/inter-latin-600-normal.woff2",
+      "sourceSha256": "f9a06e79cd3a2a20951c0f0e28f66dd0e6d3fda73911d640a2125c8fcb78f21a",
+      "importSha256": "f9a06e79cd3a2a20951c0f0e28f66dd0e6d3fda73911d640a2125c8fcb78f21a",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/frontend/design.md",
+      "mode": "0o644",
+      "source": "spec/frontend/design.md",
+      "sourceSha256": "a8d461ebda2697acab98319e5c89d0d4a7a024d1635a84939906790ba4eb7cf7",
+      "importSha256": "a8d461ebda2697acab98319e5c89d0d4a7a024d1635a84939906790ba4eb7cf7",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/frontend/screens.md",
+      "mode": "0o644",
+      "source": "spec/frontend/screens.md",
+      "sourceSha256": "9ced573066d02bbea90a85cf2573068229fb9bf8771d6fd12b0dc8573621d2fe",
+      "importSha256": "9ced573066d02bbea90a85cf2573068229fb9bf8771d6fd12b0dc8573621d2fe",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/frontend/styles/clinic.css",
+      "mode": "0o644",
+      "source": "spec/frontend/styles/clinic.css",
+      "sourceSha256": "a7d5b5ab88362e888cf47a1cb0b4e577348579f33ea55ce4c981e08fe8174b81",
+      "importSha256": "a7d5b5ab88362e888cf47a1cb0b4e577348579f33ea55ce4c981e08fe8174b81",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/frontend/visual-baselines/README.md",
+      "mode": "0o644",
+      "source": "spec/frontend/visual-baselines/README.md",
+      "sourceSha256": "bb2e9d323308f72112f1f3c9bb4d9bd367fc4e995770bf0f9bda1c9fad1f952f",
+      "importSha256": "bb2e9d323308f72112f1f3c9bb4d9bd367fc4e995770bf0f9bda1c9fad1f952f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/frontend/visual-baselines/appointments-requested.png",
+      "mode": "0o644",
+      "source": "spec/frontend/visual-baselines/appointments-requested.png",
+      "sourceSha256": "0301e25e9bb4ad60a38512ef807e8aa31c314283f4466adf9a88f8f3b5a20540",
+      "importSha256": "0301e25e9bb4ad60a38512ef807e8aa31c314283f4466adf9a88f8f3b5a20540",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/frontend/visual-baselines/bill-unpaid.png",
+      "mode": "0o644",
+      "source": "spec/frontend/visual-baselines/bill-unpaid.png",
+      "sourceSha256": "f47d2532a192033ed2fd240c37b12fddc8b5149e4ed65450f8e21a9a9ff3e718",
+      "importSha256": "f47d2532a192033ed2fd240c37b12fddc8b5149e4ed65450f8e21a9a9ff3e718",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/frontend/visual-baselines/login.png",
+      "mode": "0o644",
+      "source": "spec/frontend/visual-baselines/login.png",
+      "sourceSha256": "882116cda00651baaf2b555d221314bcd29bded6d04336b5a4f34906aa204e73",
+      "importSha256": "882116cda00651baaf2b555d221314bcd29bded6d04336b5a4f34906aa204e73",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/frontend/visual-baselines/reference-environment.json",
+      "mode": "0o644",
+      "source": "spec/frontend/visual-baselines/reference-environment.json",
+      "sourceSha256": "d193805235ce340359d0d4d0023e06b8196706eced698d9f582ed760dfe3fdaa",
+      "importSha256": "d193805235ce340359d0d4d0023e06b8196706eced698d9f582ed760dfe3fdaa",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/guard/accepted-risks.cucumber.cjs",
+      "mode": "0o644",
+      "source": "spec/guard/accepted-risks.cucumber.cjs",
+      "sourceSha256": "14df064a9f02c7903f561ac09dde873c959d21ebc75e9329209befc119602859",
+      "importSha256": "14df064a9f02c7903f561ac09dde873c959d21ebc75e9329209befc119602859",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/guard/accepted-risks.js",
+      "mode": "0o644",
+      "source": "spec/guard/accepted-risks.js",
+      "sourceSha256": "ea2186163bc2a45d5c3f0aa33ae8d3a7c6a65c262f5b2ac81ee304f63cc52b64",
+      "importSha256": "ea2186163bc2a45d5c3f0aa33ae8d3a7c6a65c262f5b2ac81ee304f63cc52b64",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/guard/check.js",
+      "mode": "0o644",
+      "source": "spec/guard/check.js",
+      "sourceSha256": "68a630404aee623f923930b5ad1c5077652dd11b574b8dbf84a5eff56577b11e",
+      "importSha256": "17cea8312e796ee5e1b5aabbe014362a692af22403e07029564233e6c1aa93eb",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "spec/guard/freeze.js",
+      "mode": "0o644",
+      "source": "spec/guard/freeze.js",
+      "sourceSha256": "332a58cdb3afb095a4965dbeba3ee2272f72189592180fd47ab78905827d7249",
+      "importSha256": "cd3134164bfcdebc8ad0699f22738e75811a35d3912729d3e794b88aa3d984dc",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "spec/guard/guard.js",
+      "mode": "0o644",
+      "source": "spec/guard/guard.js",
+      "sourceSha256": "691928f82aea736faab84d46d0f9a96ad0309c08dfb72e1758cab38ca5bc66f0",
+      "importSha256": "d266c0de0e347a7e1cf4685c7f61e251941235393f33ac0c0728f0a8fc40b013",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "spec/guard/protected-paths.json",
+      "mode": "0o644",
+      "source": "spec/guard/protected-paths.json",
+      "sourceSha256": "baa9006f755732f9cc98cfda5f29a32fdd458cef09b719dee9f87f733e66deb9",
+      "importSha256": "8fc85994f4293483514731c1ca70be8e1a58f705a47d68ec40c0fedeb142fcfd",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "spec/harness/README.md",
+      "mode": "0o644",
+      "source": "spec/harness/README.md",
+      "sourceSha256": "314e26429c66e40ddfee576f352a3945213e8c03a2c0b78484723709789636e6",
+      "importSha256": "314e26429c66e40ddfee576f352a3945213e8c03a2c0b78484723709789636e6",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/auth.js",
+      "mode": "0o644",
+      "source": "spec/harness/auth.js",
+      "sourceSha256": "002966b6025a89965685136efd8205d6bc8b16b5ad50dcfde7573a7198050efd",
+      "importSha256": "002966b6025a89965685136efd8205d6bc8b16b5ad50dcfde7573a7198050efd",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/clinic-time.js",
+      "mode": "0o644",
+      "source": "spec/harness/clinic-time.js",
+      "sourceSha256": "afd2c9153031be62b697093b326b1e3cdcbf42195a231420a57daf066e2cb26f",
+      "importSha256": "afd2c9153031be62b697093b326b1e3cdcbf42195a231420a57daf066e2cb26f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/collector/otlp.js",
+      "mode": "0o644",
+      "source": "spec/harness/collector/otlp.js",
+      "sourceSha256": "519c49ffdb10942a44e173b54add4659ae56a6a47a42638c457d73ccf04ecd38",
+      "importSha256": "519c49ffdb10942a44e173b54add4659ae56a6a47a42638c457d73ccf04ecd38",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/collector/package.json",
+      "mode": "0o644",
+      "source": "spec/harness/collector/package.json",
+      "sourceSha256": "65fc5569e529bbd6d11cda8b838ae6a942a9888af353fb21aec8984aad5717eb",
+      "importSha256": "65fc5569e529bbd6d11cda8b838ae6a942a9888af353fb21aec8984aad5717eb",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/collector/proto/opentelemetry/proto/collector/trace/v1/trace_service.proto",
+      "mode": "0o644",
+      "source": "spec/harness/collector/proto/opentelemetry/proto/collector/trace/v1/trace_service.proto",
+      "sourceSha256": "b63718fbcea6ba0d824c65dfe4541c1cc6f37191fefaa7537baa05e885516486",
+      "importSha256": "b63718fbcea6ba0d824c65dfe4541c1cc6f37191fefaa7537baa05e885516486",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/collector/proto/opentelemetry/proto/common/v1/common.proto",
+      "mode": "0o644",
+      "source": "spec/harness/collector/proto/opentelemetry/proto/common/v1/common.proto",
+      "sourceSha256": "0b2b2be611e0aeacee4559893e436f371de4ac04cb4539b927d8c8054dfa79cc",
+      "importSha256": "0b2b2be611e0aeacee4559893e436f371de4ac04cb4539b927d8c8054dfa79cc",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/collector/proto/opentelemetry/proto/resource/v1/resource.proto",
+      "mode": "0o644",
+      "source": "spec/harness/collector/proto/opentelemetry/proto/resource/v1/resource.proto",
+      "sourceSha256": "346623c21120d5863d8160b42629c64f046a084c9908be7a2044e5298201de0d",
+      "importSha256": "346623c21120d5863d8160b42629c64f046a084c9908be7a2044e5298201de0d",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/collector/proto/opentelemetry/proto/trace/v1/trace.proto",
+      "mode": "0o644",
+      "source": "spec/harness/collector/proto/opentelemetry/proto/trace/v1/trace.proto",
+      "sourceSha256": "69ba9c59932b070e9bdaa308bb0dc857dfe4879831030ad798b287ebaa75e0da",
+      "importSha256": "69ba9c59932b070e9bdaa308bb0dc857dfe4879831030ad798b287ebaa75e0da",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/collector/server.js",
+      "mode": "0o644",
+      "source": "spec/harness/collector/server.js",
+      "sourceSha256": "63e80ff4d23291147bf25f339e28e7305da000aa88dbe835946264ea9c5ad0c1",
+      "importSha256": "63e80ff4d23291147bf25f339e28e7305da000aa88dbe835946264ea9c5ad0c1",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/collector/setup",
+      "mode": "0o755",
+      "source": "spec/harness/collector/setup",
+      "sourceSha256": "3d60a2232f52fcac37aefa7c911363653602d35daf8f6f318efcd8b004c2c984",
+      "importSha256": "3d60a2232f52fcac37aefa7c911363653602d35daf8f6f318efcd8b004c2c984",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/collector/start",
+      "mode": "0o755",
+      "source": "spec/harness/collector/start",
+      "sourceSha256": "fc00bbd213aab5b9fca19c21cfdea967415b15d9ff9c5f46623394123f990d2c",
+      "importSha256": "fc00bbd213aab5b9fca19c21cfdea967415b15d9ff9c5f46623394123f990d2c",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/config.js",
+      "mode": "0o644",
+      "source": "spec/harness/config.js",
+      "sourceSha256": "544a83f74a435b8b53f30b48b7263554d6883f24ea3376d048ec568a0e6de30f",
+      "importSha256": "544a83f74a435b8b53f30b48b7263554d6883f24ea3376d048ec568a0e6de30f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/free-port.sh",
+      "mode": "0o755",
+      "source": "spec/harness/free-port.sh",
+      "sourceSha256": "442ffdd33fe11f8bf1f4fd8301365fd7e7b132001dbd504e8f51cc084b594202",
+      "importSha256": "442ffdd33fe11f8bf1f4fd8301365fd7e7b132001dbd504e8f51cc084b594202",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/money.js",
+      "mode": "0o644",
+      "source": "spec/harness/money.js",
+      "sourceSha256": "dbecced7fe92777d0c03e9e7ca34b8203a66ab3b013932047f06bbe5f81c49e8",
+      "importSha256": "dbecced7fe92777d0c03e9e7ca34b8203a66ab3b013932047f06bbe5f81c49e8",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/processes.js",
+      "mode": "0o644",
+      "source": "spec/harness/processes.js",
+      "sourceSha256": "459da0b68c2e33eaf29480933b3b5e0840d26fb18428d6016462cf96b33328bc",
+      "importSha256": "459da0b68c2e33eaf29480933b3b5e0840d26fb18428d6016462cf96b33328bc",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/schema.js",
+      "mode": "0o644",
+      "source": "spec/harness/schema.js",
+      "sourceSha256": "83a1cc26e6a3a6e4d2ab94afde8c509348d9e25338af97e556a4ca9162913e0a",
+      "importSha256": "83a1cc26e6a3a6e4d2ab94afde8c509348d9e25338af97e556a4ca9162913e0a",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/seed.js",
+      "mode": "0o644",
+      "source": "spec/harness/seed.js",
+      "sourceSha256": "20545b51a73fe90e16cf290f0c367f963d4aed84301127e57d64099e7d01acb0",
+      "importSha256": "20545b51a73fe90e16cf290f0c367f963d4aed84301127e57d64099e7d01acb0",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/semconv.js",
+      "mode": "0o644",
+      "source": "spec/harness/semconv.js",
+      "sourceSha256": "3de22e5c27da53f9e74866bc4555352d7392ed4a3dea9d5a6af4e126b7418340",
+      "importSha256": "3de22e5c27da53f9e74866bc4555352d7392ed4a3dea9d5a6af4e126b7418340",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/show-trace.js",
+      "mode": "0o755",
+      "source": "spec/harness/show-trace.js",
+      "sourceSha256": "af0ff95df72dc79776e69d2ccea2203d027e6f40cf7065fc18b09c817a4d0495",
+      "importSha256": "af0ff95df72dc79776e69d2ccea2203d027e6f40cf7065fc18b09c817a4d0495",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/stub-server.js",
+      "mode": "0o644",
+      "source": "spec/harness/stub-server.js",
+      "sourceSha256": "847b3e2b87138de4a33cad6c61e4d3a2ef6d7c1998b426ed03fa1732b9166454",
+      "importSha256": "847b3e2b87138de4a33cad6c61e4d3a2ef6d7c1998b426ed03fa1732b9166454",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/harness/traces.js",
+      "mode": "0o644",
+      "source": "spec/harness/traces.js",
+      "sourceSha256": "de174a101f52dd9e9ca55f14159d8f13eb0d3215ce4ee7b9bc36cdb34b63f675",
+      "importSha256": "de174a101f52dd9e9ca55f14159d8f13eb0d3215ce4ee7b9bc36cdb34b63f675",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/package-lock.json",
+      "mode": "0o644",
+      "source": "spec/package-lock.json",
+      "sourceSha256": "a39574a06b9c31a0838308bc8ee666a635a11acd8bb003a18c9ec17fc17f22cf",
+      "importSha256": "a39574a06b9c31a0838308bc8ee666a635a11acd8bb003a18c9ec17fc17f22cf",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/package.json",
+      "mode": "0o644",
+      "source": "spec/package.json",
+      "sourceSha256": "58da50dc5e25e46d49e01840cbec90aa51fac044f5b54ecf25399ff432c7cbb6",
+      "importSha256": "58da50dc5e25e46d49e01840cbec90aa51fac044f5b54ecf25399ff432c7cbb6",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/protected.sha256",
+      "mode": "0o644",
+      "source": "spec/protected.sha256",
+      "sourceSha256": "2acea1abd4aa78b3e0cf2ba4284b44adbc24056d86a51545b2a8aa0d67787667",
+      "importSha256": "2acea1abd4aa78b3e0cf2ba4284b44adbc24056d86a51545b2a8aa0d67787667",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/run-all.js",
+      "mode": "0o644",
+      "source": "spec/run-all.js",
+      "sourceSha256": "405ff05c35288eb04c066413fb1b31ca0367d9aef1e1befdb2c573f8f5992c0e",
+      "importSha256": "1b1d6c7502474596abf65c8056227265674c4d51f910dc6ae7df05d2ca68887f",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "spec/seed-data/customers.json",
+      "mode": "0o644",
+      "source": "spec/seed-data/customers.json",
+      "sourceSha256": "68fff4da0f7394b40e9e2cd72851fabb61ac92f5eb3b7fb6cf4d67555b94f270",
+      "importSha256": "68fff4da0f7394b40e9e2cd72851fabb61ac92f5eb3b7fb6cf4d67555b94f270",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/seed-data/services.json",
+      "mode": "0o644",
+      "source": "spec/seed-data/services.json",
+      "sourceSha256": "c9740b0bbee84c9df237f5dd1308c9710db5fdf10b92dfaff1a1d9ce5bfc4673",
+      "importSha256": "c9740b0bbee84c9df237f5dd1308c9710db5fdf10b92dfaff1a1d9ce5bfc4673",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/seed-data/users.json",
+      "mode": "0o644",
+      "source": "spec/seed-data/users.json",
+      "sourceSha256": "7064b604db7680eaf1921f35df6bcad2899b85cb037a4989fe59a4c81e7e081c",
+      "importSha256": "7064b604db7680eaf1921f35df6bcad2899b85cb037a4989fe59a4c81e7e081c",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/seed-data/veterinarians.json",
+      "mode": "0o644",
+      "source": "spec/seed-data/veterinarians.json",
+      "sourceSha256": "0ccdb56683dda34319cd7e0055010458d37905a0cb7b7861b046d3fdbcbffd98",
+      "importSha256": "0ccdb56683dda34319cd7e0055010458d37905a0cb7b7861b046d3fdbcbffd98",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/test-policy.json",
+      "mode": "0o644",
+      "source": "spec/test-policy.json",
+      "sourceSha256": "ff963e8ff04d6abe1f6eb381e6133b9d1eeaf9bbbb220efd950e15003896405e",
+      "importSha256": "61a3f00dd2185ea70958fcfe4487de39adbe667b1dbe86b084405c541575e004",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "spec/tests/README.md",
+      "mode": "0o644",
+      "source": "spec/tests/README.md",
+      "sourceSha256": "a913e8869818e76cde43d43401544d7bc57f499fc4d3cb0a36cbcd7f0c130625",
+      "importSha256": "6b1cf831fdf10dc4ddd135e6d7d75c5dbc08b34651e5ddfe97d0618b35f8af9b",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "spec/tests/auth/access-control.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/auth/access-control.test.js",
+      "sourceSha256": "080be48359cf87fdb2297a891f6495bf8c1ecf9b9737c6c8ace71df906d6d16f",
+      "importSha256": "080be48359cf87fdb2297a891f6495bf8c1ecf9b9737c6c8ace71df906d6d16f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/auth/login.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/auth/login.test.js",
+      "sourceSha256": "ebf9b4723988bb12f1c18e8da2470e18519976950b348bdf929c09dcff59084e",
+      "importSha256": "ebf9b4723988bb12f1c18e8da2470e18519976950b348bdf929c09dcff59084e",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/browser/README.md",
+      "mode": "0o644",
+      "source": "spec/tests/browser/README.md",
+      "sourceSha256": "9c0cf378ab06bc816a4ecbd184227e9098a419cf58891a0628d6c67192227d36",
+      "importSha256": "9c0cf378ab06bc816a4ecbd184227e9098a419cf58891a0628d6c67192227d36",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/browser/journeys.spec.js",
+      "mode": "0o644",
+      "source": "spec/tests/browser/journeys.spec.js",
+      "sourceSha256": "3d6410197ceb00ad4285b77704f51cceaa7b39e0cfebee80af9eca6ce2290ff3",
+      "importSha256": "3d6410197ceb00ad4285b77704f51cceaa7b39e0cfebee80af9eca6ce2290ff3",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/browser/playwright.config.js",
+      "mode": "0o644",
+      "source": "spec/tests/browser/playwright.config.js",
+      "sourceSha256": "62fd9dbb14b4db318f92a7b5cbdf8aead8581f2d3c02354421ebec1cc0f6fe87",
+      "importSha256": "62fd9dbb14b4db318f92a7b5cbdf8aead8581f2d3c02354421ebec1cc0f6fe87",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/browser/run-in-container.sh",
+      "mode": "0o755",
+      "source": "spec/tests/browser/run-in-container.sh",
+      "sourceSha256": "3912dee2b54319353bd3776f3fe2fc4ea4fb3112b64c486b59e5f57e60d0fd5e",
+      "importSha256": "3912dee2b54319353bd3776f3fe2fc4ea4fb3112b64c486b59e5f57e60d0fd5e",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/contract/api-contracts.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/contract/api-contracts.test.js",
+      "sourceSha256": "b2ec5d507b5564ecde61afc978b972181afa981b7d72d9a1a2e0dd54466fae42",
+      "importSha256": "b2ec5d507b5564ecde61afc978b972181afa981b7d72d9a1a2e0dd54466fae42",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/contract/domain-examples.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/contract/domain-examples.test.js",
+      "sourceSha256": "6d2361d8800496e377d0c70c9927ca121ed5894f024b12a60138d4af94a6a9c2",
+      "importSha256": "6d2361d8800496e377d0c70c9927ca121ed5894f024b12a60138d4af94a6a9c2",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/contract/seed-data.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/contract/seed-data.test.js",
+      "sourceSha256": "23cf30080e9b07dada907e953816e88983b91d6ced3e09809a724954b4898ae6",
+      "importSha256": "23cf30080e9b07dada907e953816e88983b91d6ced3e09809a724954b4898ae6",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/contract/spec05.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/contract/spec05.test.js",
+      "sourceSha256": "b9efad5e99d995292138244fa59797fb91e086c2d5bd5aa435b669fac4f4969c",
+      "importSha256": "b9efad5e99d995292138244fa59797fb91e086c2d5bd5aa435b669fac4f4969c",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/contract/spec06.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/contract/spec06.test.js",
+      "sourceSha256": "41250011f153dd599eb7615fb470b3175adb99052acd753d3a24b80ea6c13c05",
+      "importSha256": "41250011f153dd599eb7615fb470b3175adb99052acd753d3a24b80ea6c13c05",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/harness/assertion-slices.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/harness/assertion-slices.test.js",
+      "sourceSha256": "79a68020bbe760bcbaa6f28aed8cf9d3674eff6b03c796baea15d0920e54db42",
+      "importSha256": "79a68020bbe760bcbaa6f28aed8cf9d3674eff6b03c796baea15d0920e54db42",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/harness/ci-authority.test.js",
+      "mode": "0o644",
+      "source": null,
+      "sourceSha256": null,
+      "importSha256": "6c6a5a45e36b935aca91cf193d310184c7e2052313929c229b4461917a7b5fe3",
+      "disposition": "new"
+    },
+    {
+      "destination": "spec/tests/harness/collector.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/harness/collector.test.js",
+      "sourceSha256": "d8f51b74f10ab154243aa979ac6cf8aa22e9d1bfcb9d96a4e53a94231df0e301",
+      "importSha256": "d8f51b74f10ab154243aa979ac6cf8aa22e9d1bfcb9d96a4e53a94231df0e301",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/harness/factory-binding.test.js",
+      "mode": "0o644",
+      "source": null,
+      "sourceSha256": null,
+      "importSha256": "5960e8d92ce06a832c6766bebde29ddec1831cb9d37dcbcc9c81b35ecc79052d",
+      "disposition": "new"
+    },
+    {
+      "destination": "spec/tests/harness/guard.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/harness/guard.test.js",
+      "sourceSha256": "edef71a75cea258dd36b8a609ad20b371551183a4639170c726522eda4f43ef6",
+      "importSha256": "edef71a75cea258dd36b8a609ad20b371551183a4639170c726522eda4f43ef6",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/harness/protect-hook.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/harness/protect-hook.test.js",
+      "sourceSha256": "94c0af355fa3185db6b1736d233a1f0960d49e8afb5c1829e4b9c2ea33367941",
+      "importSha256": "c7822ea5bb0b69e7660e8342e68eac909e95fc238a3298e5eb3cd75ae019fdc2",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "spec/tests/harness/run-all.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/harness/run-all.test.js",
+      "sourceSha256": "90fda93e5c855d880f72093dd0388c0772b98021e1dcdc93f071af52aeb67bb9",
+      "importSha256": "150c48915a96699f4b7def90ad33ae05ed5790022bf4330a39bcbafed7c0658f",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "spec/tests/harness/semconv.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/harness/semconv.test.js",
+      "sourceSha256": "3445b39eaeff0af23d6befcb32b44000054facb10539c728f17472825811e54d",
+      "importSha256": "3445b39eaeff0af23d6befcb32b44000054facb10539c728f17472825811e54d",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/harness/stub-faults.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/harness/stub-faults.test.js",
+      "sourceSha256": "66c0f49063da639e63f5d56b11dc10298818e5c79cd9db82adc424c2af3f1b07",
+      "importSha256": "66c0f49063da639e63f5d56b11dc10298818e5c79cd9db82adc424c2af3f1b07",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/observability/business-traces.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/observability/business-traces.test.js",
+      "sourceSha256": "2056ce37794c541807efcedcde33bcceae30848232373bb79cb552967963fb48",
+      "importSha256": "2056ce37794c541807efcedcde33bcceae30848232373bb79cb552967963fb48",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/observability/business-workflows.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/observability/business-workflows.test.js",
+      "sourceSha256": "ce20ff950638f4c341345d250051ecd1719344d2d46a1ffa10d801323b83d97b",
+      "importSha256": "ce20ff950638f4c341345d250051ecd1719344d2d46a1ffa10d801323b83d97b",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/observability/otel-conventions.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/observability/otel-conventions.test.js",
+      "sourceSha256": "8870718aca890d2230062114a90d17d5d3f93cd99c5cd0921f82d11c9f8122f8",
+      "importSha256": "8870718aca890d2230062114a90d17d5d3f93cd99c5cd0921f82d11c9f8122f8",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/performance/README.md",
+      "mode": "0o644",
+      "source": "spec/tests/performance/README.md",
+      "sourceSha256": "538ad85297ef53585dfe08977b65e71322c03c2a69607d4265cda20d7852015f",
+      "importSha256": "538ad85297ef53585dfe08977b65e71322c03c2a69607d4265cda20d7852015f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/performance/gate.js",
+      "mode": "0o644",
+      "source": "spec/tests/performance/gate.js",
+      "sourceSha256": "053c0849d38b5e168c066fa7d8b8c59955e5eb125a115942b4d948740357b001",
+      "importSha256": "053c0849d38b5e168c066fa7d8b8c59955e5eb125a115942b4d948740357b001",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/performance/gate.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/performance/gate.test.js",
+      "sourceSha256": "6dbc5f18e3099b17b34f47d4304da63efdf2fc0a069bfb72d40bc96e4fdae2bb",
+      "importSha256": "6dbc5f18e3099b17b34f47d4304da63efdf2fc0a069bfb72d40bc96e4fdae2bb",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/performance/local.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/performance/local.test.js",
+      "sourceSha256": "4135a7c4fba3eb083e97fac573c4d1c54b856671dc2305fde751f5f07c989819",
+      "importSha256": "4135a7c4fba3eb083e97fac573c4d1c54b856671dc2305fde751f5f07c989819",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/review-policy/fixtures/eligible.json",
+      "mode": "0o644",
+      "source": "spec/tests/review-policy/fixtures/eligible.json",
+      "sourceSha256": "062476d3d3b13deee693832c7f96709ad3cb4b44574a4af54c5ff3107f140495",
+      "importSha256": "062476d3d3b13deee693832c7f96709ad3cb4b44574a4af54c5ff3107f140495",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/review-policy/review-policy.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/review-policy/review-policy.test.js",
+      "sourceSha256": "5e22e55ecdf9a3c95077420efecac20ef84f876966977e33d8b9b26f61411571",
+      "importSha256": "f102e0800255059962387c385dea0e08ec0a4a852f896f2c91c443440080a723",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "spec/tests/runtime/runtime-contract.test.js",
+      "mode": "0o644",
+      "source": "spec/tests/runtime/runtime-contract.test.js",
+      "sourceSha256": "1531f9bca1818b4406c58ffc57f1196bc6956da13a3f8bc3bd509a19e27f7c1b",
+      "importSha256": "1531f9bca1818b4406c58ffc57f1196bc6956da13a3f8bc3bd509a19e27f7c1b",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/steps/checkout.steps.js",
+      "mode": "0o644",
+      "source": "spec/tests/steps/checkout.steps.js",
+      "sourceSha256": "ca807352906642f39fdcc483e2982f579cde348105f0a58f434c54883015fc1b",
+      "importSha256": "ca807352906642f39fdcc483e2982f579cde348105f0a58f434c54883015fc1b",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/steps/common.steps.js",
+      "mode": "0o644",
+      "source": "spec/tests/steps/common.steps.js",
+      "sourceSha256": "c24df291771abc69dd670ee1bb9615eb1490c57b745f49938b0d0ba4d9fb9d25",
+      "importSha256": "c24df291771abc69dd670ee1bb9615eb1490c57b745f49938b0d0ba4d9fb9d25",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/steps/customer.steps.js",
+      "mode": "0o644",
+      "source": "spec/tests/steps/customer.steps.js",
+      "sourceSha256": "d837b19ec17ca36f461741c4b95f99049f615ab5f815dbd1cab2105a29479191",
+      "importSha256": "d837b19ec17ca36f461741c4b95f99049f615ab5f815dbd1cab2105a29479191",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/steps/registration.steps.js",
+      "mode": "0o644",
+      "source": "spec/tests/steps/registration.steps.js",
+      "sourceSha256": "d476d8eb85424fbd28c5f309f13f7dc3533a2fec58b682a3e6842e1e8daaca4e",
+      "importSha256": "d476d8eb85424fbd28c5f309f13f7dc3533a2fec58b682a3e6842e1e8daaca4e",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/steps/reservation.steps.js",
+      "mode": "0o644",
+      "source": "spec/tests/steps/reservation.steps.js",
+      "sourceSha256": "5b211a469b465c76f5eba89cb936fa6158334e443cc407c4e2d013c542a9d959",
+      "importSha256": "5b211a469b465c76f5eba89cb936fa6158334e443cc407c4e2d013c542a9d959",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/steps/veterinarian-roster.steps.js",
+      "mode": "0o644",
+      "source": "spec/tests/steps/veterinarian-roster.steps.js",
+      "sourceSha256": "34ea1333d8c1d41120350388f69235eb46370707aec13ea7f07ea66cf19e237f",
+      "importSha256": "34ea1333d8c1d41120350388f69235eb46370707aec13ea7f07ea66cf19e237f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/steps/veterinarian-services.steps.js",
+      "mode": "0o644",
+      "source": "spec/tests/steps/veterinarian-services.steps.js",
+      "sourceSha256": "9af68ee9be25d92647ba075b513a8b6f86b8f361fc192f5992b5bbd4aa0c72ff",
+      "importSha256": "9af68ee9be25d92647ba075b513a8b6f86b8f361fc192f5992b5bbd4aa0c72ff",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/support/access-cases.js",
+      "mode": "0o644",
+      "source": "spec/tests/support/access-cases.js",
+      "sourceSha256": "ec985d2c7983a55cf1f6914abc3753460bead82cb8a72ad0534f7252f82476ad",
+      "importSha256": "ec985d2c7983a55cf1f6914abc3753460bead82cb8a72ad0534f7252f82476ad",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/support/business-traces.js",
+      "mode": "0o644",
+      "source": "spec/tests/support/business-traces.js",
+      "sourceSha256": "0ecb8e1b5d21372cb6df91f6f4b736d53cb7e9ec3b6b6647ee7f43e7a6e882c5",
+      "importSha256": "0ecb8e1b5d21372cb6df91f6f4b736d53cb7e9ec3b6b6647ee7f43e7a6e882c5",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/support/registration.js",
+      "mode": "0o644",
+      "source": "spec/tests/support/registration.js",
+      "sourceSha256": "911d1ab5ed04a96b4b6de6166fae64f3fa5e763abd59b537828971296695be38",
+      "importSha256": "911d1ab5ed04a96b4b6de6166fae64f3fa5e763abd59b537828971296695be38",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/support/service-fixture.js",
+      "mode": "0o644",
+      "source": "spec/tests/support/service-fixture.js",
+      "sourceSha256": "793a10ee750dc6f1902999b6c8de5983bd5da567e85129194becb755ce63fbdc",
+      "importSha256": "793a10ee750dc6f1902999b6c8de5983bd5da567e85129194becb755ce63fbdc",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/support/world.js",
+      "mode": "0o644",
+      "source": "spec/tests/support/world.js",
+      "sourceSha256": "8a8004b3ea3b80d9060624a77d241f540d6ee180a183dc319cce5d7be3c0be0d",
+      "importSha256": "8a8004b3ea3b80d9060624a77d241f540d6ee180a183dc319cce5d7be3c0be0d",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "spec/tests/workflows/clinic.steps.js",
+      "mode": "0o644",
+      "source": "spec/tests/workflows/clinic.steps.js",
+      "sourceSha256": "2d7962d52db5ffbe6e3a5bcc5da020ae7f8ac8ec51493b2bd9e8af7096d6e09b",
+      "importSha256": "2d7962d52db5ffbe6e3a5bcc5da020ae7f8ac8ec51493b2bd9e8af7096d6e09b",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/capture-payment-trace.mjs",
+      "mode": "0o644",
+      "source": "tools/capture-payment-trace.mjs",
+      "sourceSha256": "e0422436a854a4babe91a0b8720fcdd4e73c26a6bdc83eb97f6a09b4e4c4c309",
+      "importSha256": "e0422436a854a4babe91a0b8720fcdd4e73c26a6bdc83eb97f6a09b4e4c4c309",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/compose-smoke.mjs",
+      "mode": "0o644",
+      "source": "tools/compose-smoke.mjs",
+      "sourceSha256": "0060a25c1b0648b40756711a238da16e3e21e8e67afc8a41e842ea05ae6518c2",
+      "importSha256": "0060a25c1b0648b40756711a238da16e3e21e8e67afc8a41e842ea05ae6518c2",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/demo/README.md",
+      "mode": "0o644",
+      "source": "tools/demo/README.md",
+      "sourceSha256": "5d54b583c44c35ad83da5f75f71bd473b7e889ec7447d1fff0eae41a2e7244da",
+      "importSha256": "27634c469f9dc1735ff6277953a8b25fa0fbaeb56068b6b3fb78c51f3ac0ca7d",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "tools/demo/delete-checkout.sh",
+      "mode": "0o755",
+      "source": "tools/demo/delete-checkout.sh",
+      "sourceSha256": "593393db6e3b79eec75a2e7ada203c8a23c1b7319cfecf937b55e248da168f3e",
+      "importSha256": "593393db6e3b79eec75a2e7ada203c8a23c1b7319cfecf937b55e248da168f3e",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/demo/finish-rehearsal.sh",
+      "mode": "0o755",
+      "source": "tools/demo/finish-rehearsal.sh",
+      "sourceSha256": "cc4da377279a73230df5224cef10ac6d7269e8bbdfc528238e468bb3a086f7d0",
+      "importSha256": "cc4da377279a73230df5224cef10ac6d7269e8bbdfc528238e468bb3a086f7d0",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/demo/fork-workspace.sh",
+      "mode": "0o755",
+      "source": "tools/demo/fork-workspace.sh",
+      "sourceSha256": "5daaa066e4eee5ff3b51d3e95292a78d7a8fb2a5cf9a402bee1978813c8cf18e",
+      "importSha256": "5daaa066e4eee5ff3b51d3e95292a78d7a8fb2a5cf9a402bee1978813c8cf18e",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/demo/playwright.demo.config.mjs",
+      "mode": "0o644",
+      "source": "tools/demo/playwright.demo.config.mjs",
+      "sourceSha256": "9ea37a6efe361c6731774c1f7a89cba7f060636a1c2077e93e63c8859d263ac5",
+      "importSha256": "9ea37a6efe361c6731774c1f7a89cba7f060636a1c2077e93e63c8859d263ac5",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/demo/prepare-rehearsal.sh",
+      "mode": "0o755",
+      "source": "tools/demo/prepare-rehearsal.sh",
+      "sourceSha256": "c131326eb9a81ef873e2a5d2ae00b0cde334835721d79407092790580d5c84b8",
+      "importSha256": "c131326eb9a81ef873e2a5d2ae00b0cde334835721d79407092790580d5c84b8",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/demo/rebuild-checkout-prompt-js.md",
+      "mode": "0o644",
+      "source": "tools/demo/rebuild-checkout-prompt-js.md",
+      "sourceSha256": "82cfb601b149dc25622709d32c28bd4739c4ebb4ad58b76f4e8f2bbed3a53d5f",
+      "importSha256": "82cfb601b149dc25622709d32c28bd4739c4ebb4ad58b76f4e8f2bbed3a53d5f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/demo/rebuild-checkout-prompt.md",
+      "mode": "0o644",
+      "source": "tools/demo/rebuild-checkout-prompt.md",
+      "sourceSha256": "f864daf57ccff4878c83daf832ef2139dde77c20266f8da6009119fbab1fc299",
+      "importSha256": "f864daf57ccff4878c83daf832ef2139dde77c20266f8da6009119fbab1fc299",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/demo/visual-baselines-headed/appointments-requested.png",
+      "mode": "0o644",
+      "source": "tools/demo/visual-baselines-headed/appointments-requested.png",
+      "sourceSha256": "3d1b9c2edbe0422cfa65cbea3b5cec041ec2f3a5131e36c2715c0e1bf50ddec5",
+      "importSha256": "3d1b9c2edbe0422cfa65cbea3b5cec041ec2f3a5131e36c2715c0e1bf50ddec5",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/demo/visual-baselines-headed/bill-unpaid.png",
+      "mode": "0o644",
+      "source": "tools/demo/visual-baselines-headed/bill-unpaid.png",
+      "sourceSha256": "782a7fab916343ffb2738a430bdacdfc868f2324a85c04508fe5d259e9fef05f",
+      "importSha256": "782a7fab916343ffb2738a430bdacdfc868f2324a85c04508fe5d259e9fef05f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/petclinic/README.md",
+      "mode": "0o644",
+      "source": "tools/petclinic/README.md",
+      "sourceSha256": "e1421022d54084f44d6067cfa3b32033a4298a30aa8f8618bccb8207384eab2d",
+      "importSha256": "8ca7c69a4996bf6c1e7f7ce09dab0b4ea47713dcd516723917d6d726a381146b",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "tools/petclinic/adoption.test.mjs",
+      "mode": "0o644",
+      "source": "tools/petclinic/adoption.test.mjs",
+      "sourceSha256": "8e88924c56953cad2b66a9402b18b42ac507607a66e6aa5e3bed0f0cdcbd098c",
+      "importSha256": "8e88924c56953cad2b66a9402b18b42ac507607a66e6aa5e3bed0f0cdcbd098c",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/petclinic/evidence-adapter.test.mjs",
+      "mode": "0o644",
+      "source": "tools/petclinic/evidence-adapter.test.mjs",
+      "sourceSha256": "bfa7d36f8a21cd2844d07ad7c4f3c3eecee311781e1afde5c63378a11bb05f96",
+      "importSha256": "13375e6d60880a34f8a4d6d0263cc3de3f249899552ef5a3c67896205a883c44",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "tools/petclinic/factory-path.mjs",
+      "mode": "0o644",
+      "source": null,
+      "sourceSha256": null,
+      "importSha256": "1b09a817a6437a8205b649aedb8e7fce2fed47613ebe0f90884f70798aa578f9",
+      "disposition": "new"
+    },
+    {
+      "destination": "tools/petclinic/factory-tool.mjs",
+      "mode": "0o644",
+      "source": null,
+      "sourceSha256": null,
+      "importSha256": "c0fce756ab489378b51fe4bd1157e695eb0cb807ae16165549d1480592c5e803",
+      "disposition": "new"
+    },
+    {
+      "destination": "tools/petclinic/suite.mjs",
+      "mode": "0o644",
+      "source": "tools/petclinic/suite.mjs",
+      "sourceSha256": "8d5f77fa05f6cbe2fdb46dd2e52a9499404500c9103de29084d2219130c7105f",
+      "importSha256": "bf6f93999ce2711fcf498287e129e497cc588c7959ea281ecc33eca825736374",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "tools/petclinic/trust-snapshot.mjs",
+      "mode": "0o644",
+      "source": "tools/petclinic/trust-snapshot.mjs",
+      "sourceSha256": "7c3ddcc5549227af4a71ea9d5b5e54985a87bb3b83a5ac40006da4b614ef4ff8",
+      "importSha256": "7c3ddcc5549227af4a71ea9d5b5e54985a87bb3b83a5ac40006da4b614ef4ff8",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/petclinic/verify.mjs",
+      "mode": "0o644",
+      "source": "tools/petclinic/verify.mjs",
+      "sourceSha256": "014455c8bf541313bd935d4a5c85f77848e1480f0fdd1c76932f8fc6e1d0c351",
+      "importSha256": "180b400af53f4399d1ec7db8626d1b7396faa214c6fb7e051aa30037a461acc2",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "tools/review/portable/check-import-boundaries.mjs",
+      "mode": "0o644",
+      "source": "tools/review/portable/check-import-boundaries.mjs",
+      "sourceSha256": "a9bce3ceaaa826c7fd3e5f35ce3864e0de94ca93c15ceafdd5c22f2ab865596e",
+      "importSha256": "1751b1b69492769adb3a04f4bcd7922cc885a0f2b5995148250865b558eb64e9",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "tools/review/project-specific/README.md",
+      "mode": "0o644",
+      "source": "tools/review/project-specific/README.md",
+      "sourceSha256": "1dfb68149b663868cd378d0f7f9f34ea718419c6fdffda70cf67838a7098c203",
+      "importSha256": "1b4c7b05eef82a73fb75c0c34a9cb0c42a3449c9d781416ef457ee42f098cd6c",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "tools/review/project-specific/calibration-manifest.md",
+      "mode": "0o644",
+      "source": "tools/review/project-specific/calibration-manifest.md",
+      "sourceSha256": "4b27f642b9d89859294773b8fc68cbf0591033d2db721457e529267c38f7076c",
+      "importSha256": "76f99b4777728d8021808abd5a0b61c2762537ef23ab5544524ddd9c4a2c76de",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "tools/review/project-specific/engineering-review.test.mjs",
+      "mode": "0o644",
+      "source": "tools/review/project-specific/engineering-review.test.mjs",
+      "sourceSha256": "5c2a869e4586b5dd2cc180e24d90616834e651630f50a8bf9806aadab92b3c07",
+      "importSha256": "5c2a869e4586b5dd2cc180e24d90616834e651630f50a8bf9806aadab92b3c07",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/review/project-specific/frontend-engineering.test.mjs",
+      "mode": "0o644",
+      "source": "tools/review/project-specific/frontend-engineering.test.mjs",
+      "sourceSha256": "9eba9b4880ea24d93525b638d3b9db05cbcf09c68409e88b8b9721dfc7ce10c3",
+      "importSha256": "9eba9b4880ea24d93525b638d3b9db05cbcf09c68409e88b8b9721dfc7ce10c3",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/review/project-specific/import-boundaries.json",
+      "mode": "0o644",
+      "source": "tools/review/project-specific/import-boundaries.json",
+      "sourceSha256": "691df892f72d8f765b86550300391378a9174527d3ac2e218eea607a69491338",
+      "importSha256": "691df892f72d8f765b86550300391378a9174527d3ac2e218eea607a69491338",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/review/project-specific/import-boundaries.test.mjs",
+      "mode": "0o644",
+      "source": "tools/review/project-specific/import-boundaries.test.mjs",
+      "sourceSha256": "6218cb4f7dbb8336ad4b67ad13bcd0fa65b756e9c31266e15abaf50387318b3f",
+      "importSha256": "6218cb4f7dbb8336ad4b67ad13bcd0fa65b756e9c31266e15abaf50387318b3f",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/review/project-specific/ownership.test.mjs",
+      "mode": "0o644",
+      "source": "tools/review/project-specific/ownership.test.mjs",
+      "sourceSha256": "d03497d3343cd33bfacfaba451e51c776a950e0e93ab2dcb64bd513a384fff99",
+      "importSha256": "d03497d3343cd33bfacfaba451e51c776a950e0e93ab2dcb64bd513a384fff99",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/review/project-specific/plant-calibration-defects.mjs",
+      "mode": "0o644",
+      "source": "tools/review/project-specific/plant-calibration-defects.mjs",
+      "sourceSha256": "12399c30a67c0b8f6186dd9ae73f9eae028e00d2350c6fffbb468e61006895ed",
+      "importSha256": "12399c30a67c0b8f6186dd9ae73f9eae028e00d2350c6fffbb468e61006895ed",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/review/project-specific/run-calibration-gates.sh",
+      "mode": "0o755",
+      "source": "tools/review/project-specific/run-calibration-gates.sh",
+      "sourceSha256": "5ca7abf241569966c6bce441dfd3b3e01356e80f76c45cf24b40fdaf7f83df09",
+      "importSha256": "3330d87d8aab1eb787a72ebe342e95ea514ce6a205b0bea9b4c2a7b13d332706",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "tools/review/project-specific/threat-model.md",
+      "mode": "0o644",
+      "source": "tools/review/project-specific/threat-model.md",
+      "sourceSha256": "82e9b48dab44dfd96b3e4b907b0fa06296742bc86411ee257846d2475c22564e",
+      "importSha256": "f452692124ed2dcabfba222a01ac8253345f74e94544cdb0c4462d1e25435111",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "tools/security/calibration-defects.md",
+      "mode": "0o644",
+      "source": "tools/security/calibration-defects.md",
+      "sourceSha256": "eb845385492cf0c517ceacb02cf488757366a6772b7f9ad437b146e6a0b5541b",
+      "importSha256": "915cafb93f008f80986ef9b7acdd9c7b8869c2a840e1afb616fd90a36ab732eb",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "tools/security/project-specific/README.md",
+      "mode": "0o644",
+      "source": "tools/security/project-specific/README.md",
+      "sourceSha256": "624b6829b3b5c0857fbca2e9f3442dc7d6c7eb20aaa0c2665f46d9055ccc529d",
+      "importSha256": "661278d7d9ba6507c1a7b8e6e7d69d35913fc6aa3cbd9b2939ffeba0f615c651",
+      "disposition": "adapt"
+    },
+    {
+      "destination": "tools/security/project-specific/auth-coverage-notes.md",
+      "mode": "0o644",
+      "source": "tools/security/project-specific/auth-coverage-notes.md",
+      "sourceSha256": "356e5b697542340bb685b9d1bf350f0780e51c31ef17f9c1a5fa7ff3d829538b",
+      "importSha256": "356e5b697542340bb685b9d1bf350f0780e51c31ef17f9c1a5fa7ff3d829538b",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/security/project-specific/cors-policy.json",
+      "mode": "0o644",
+      "source": "tools/security/project-specific/cors-policy.json",
+      "sourceSha256": "36bafc97b696f4478cec37a1abf16e6176a0faa3f8eb88c48fdeb41de252f2ae",
+      "importSha256": "36bafc97b696f4478cec37a1abf16e6176a0faa3f8eb88c48fdeb41de252f2ae",
+      "disposition": "preserve"
+    },
+    {
+      "destination": "tools/security/run-sec01-spike.sh",
+      "mode": "0o755",
+      "source": "tools/security/run-sec01-spike.sh",
+      "sourceSha256": "999cf07eda6c4c699823180ee2447b48433cac188f512ba7f79934b764703b7a",
+      "importSha256": "71089d0f17a4876482704aa6fb6d6e0595a04914b62f4bb6f1a9e76a0d4a6985",
+      "disposition": "adapt"
+    }
+  ],
+  "excludedGeneratedFiles": [
+    "MIGRATION-MANIFEST.json"
+  ],
+  "humanFreezePaths": [
+    "spec/protected.sha256"
+  ],
+  "note": "Hashes describe reviewed import bytes. The owner replaces only the historical source manifest during the independent consumer freeze; later proof records that baseline separately."
+}

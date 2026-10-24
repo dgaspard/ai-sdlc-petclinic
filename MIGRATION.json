@@ -1,0 +1,14 @@
+{
+  "sourceRepository": "dgaspard/AI-SDLC-ATDD-SoftwareFactory",
+  "sourceCommit": "9809c120cafd0ad867be6568621fac3ef54f1780",
+  "factoryRepository": "https://github.com/dgaspard/AI-SDLC-ATDD-SoftwareFactory.git",
+  "factoryRevision": "9809c120cafd0ad867be6568621fac3ef54f1780",
+  "history": "Clean import; shared history and tags remain in the factory",
+  "manifest": "MIGRATION-MANIFEST.json",
+  "trust": "Consumer baseline must be independently reviewed and human-frozen; no source installation is inferred as authority",
+  "verifiedAppInstallation": {
+    "appId": 5265528,
+    "installationId": 170027882,
+    "repository": "dgaspard/ai-sdlc-petclinic"
+  }
+}

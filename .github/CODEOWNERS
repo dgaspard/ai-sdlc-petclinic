@@ -1,0 +1,8 @@
+# Independent PetClinic ownership; no automatic approval or merge.
+/spec/ @dgaspard
+/docs/specs/ @dgaspard
+/.claude/ @dgaspard
+/.github/ @dgaspard
+/AGENTS.md @dgaspard
+/CLAUDE.md @dgaspard
+/tools/petclinic/ @dgaspard

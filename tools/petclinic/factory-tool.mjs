@@ -1,0 +1,12 @@
+import path from 'node:path';
+import {spawnSync} from 'node:child_process';
+import {factoryPath} from './factory-path.mjs';
+const target=process.argv[2];
+const commands={evidence:['--test','--test-concurrency=1','spec/tests/evidence/change-evidence.test.js'],dora:['--test','--test-concurrency=1','spec/tests/dora/dora-metrics.test.js'],runner:['--test','spec/tests/harness/run-all.test.js'],change:['tools/evidence/change-evidence.mjs'],metrics:['tools/dora/dora-metrics.mjs']};
+if (!commands[target]) throw Error('Unknown factory command');
+const factory=factoryPath();
+const tests=['evidence','dora','runner'].includes(target);
+const args=commands[target].map(x=>x.startsWith('spec/')||x.startsWith('tools/')?path.join(factory,x):x);
+const r=spawnSync(process.execPath,[...args,...process.argv.slice(3)],{cwd:tests?factory:process.cwd(),stdio:'inherit'});
+if(r.error) throw r.error;
+process.exitCode=r.status??1;

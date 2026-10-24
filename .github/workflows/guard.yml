@@ -1,0 +1,165 @@
+name: Guard
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  guard:
+    # Required check (GUARD-01): protected specs and tests match the human-frozen manifest.
+    name: Protected specs and tests unchanged
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: spec/package-lock.json
+      - name: Fetch the immutable factory dependency
+        env:
+          TRUST_REVISION: ${{ vars.PETCLINIC_TRUST_REVISION }}
+        run: |
+          set -euo pipefail
+          [[ "$TRUST_REVISION" =~ ^[a-f0-9]{40}$ ]]
+          git cat-file -e "$TRUST_REVISION^{commit}"
+          git show "$TRUST_REVISION:spec/factory/petclinic/config.json" > "$RUNNER_TEMP/reviewed-factory-config.json"
+          git show "$TRUST_REVISION:spec/protected.sha256" > "$RUNNER_TEMP/reviewed-protected.sha256"
+          cmp spec/factory/petclinic/config.json "$RUNNER_TEMP/reviewed-factory-config.json"
+          cmp spec/protected.sha256 "$RUNNER_TEMP/reviewed-protected.sha256"
+          pin=$(node -p "JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')).factory.revision" "$RUNNER_TEMP/reviewed-factory-config.json")
+          [[ "$pin" =~ ^[a-f0-9]{40}$ ]]
+          dependency="$RUNNER_TEMP/factory-$pin"
+          test ! -e "$dependency"
+          git init "$dependency"
+          git -c credential.helper= -C "$dependency" fetch --depth=1 https://github.com/dgaspard/AI-SDLC-ATDD-SoftwareFactory.git "$pin"
+          git -C "$dependency" checkout --detach FETCH_HEAD
+          test "$(git -C "$dependency" rev-parse HEAD)" = "$pin"
+          test -z "$(git -C "$dependency" status --porcelain)"
+          (cd "$dependency/spec" && npm ci)
+          echo "FACTORY_CHECKOUT=$dependency" >> "$GITHUB_ENV"
+      - run: npm --prefix spec ci
+      - run: npm --prefix spec run guard:check
+
+  delivery:
+    name: Delivery spec
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: spec/delivery/package-lock.json
+      - name: Fetch the immutable factory dependency
+        env:
+          TRUST_REVISION: ${{ vars.PETCLINIC_TRUST_REVISION }}
+        run: |
+          set -euo pipefail
+          [[ "$TRUST_REVISION" =~ ^[a-f0-9]{40}$ ]]
+          git cat-file -e "$TRUST_REVISION^{commit}"
+          git show "$TRUST_REVISION:spec/factory/petclinic/config.json" > "$RUNNER_TEMP/reviewed-factory-config.json"
+          git show "$TRUST_REVISION:spec/protected.sha256" > "$RUNNER_TEMP/reviewed-protected.sha256"
+          cmp spec/factory/petclinic/config.json "$RUNNER_TEMP/reviewed-factory-config.json"
+          cmp spec/protected.sha256 "$RUNNER_TEMP/reviewed-protected.sha256"
+          pin=$(node -p "JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')).factory.revision" "$RUNNER_TEMP/reviewed-factory-config.json")
+          [[ "$pin" =~ ^[a-f0-9]{40}$ ]]
+          dependency="$RUNNER_TEMP/factory-$pin"
+          test ! -e "$dependency"
+          git init "$dependency"
+          git -c credential.helper= -C "$dependency" fetch --depth=1 https://github.com/dgaspard/AI-SDLC-ATDD-SoftwareFactory.git "$pin"
+          git -C "$dependency" checkout --detach FETCH_HEAD
+          test "$(git -C "$dependency" rev-parse HEAD)" = "$pin"
+          test -z "$(git -C "$dependency" status --porcelain)"
+          (cd "$dependency/spec" && npm ci)
+          echo "FACTORY_CHECKOUT=$dependency" >> "$GITHUB_ENV"
+      - run: npm --prefix spec/delivery ci && npm --prefix spec/delivery test
+
+  application:
+    # Required check (CI-02): every full-tier suite, uncached, on the pull request's exact tree,
+    # then the evidence check. The commands call the protected runner directly, not npm scripts
+    # in the unprotected root package.json, so a pull request can't redefine the gate it is
+    # judged by (A-20). CI's run is authoritative (A-13).
+    name: Application suite
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: |
+            spec/package-lock.json
+            spec/delivery/package-lock.json
+            services/platform/package-lock.json
+      - name: Fetch the immutable factory dependency
+        env:
+          TRUST_REVISION: ${{ vars.PETCLINIC_TRUST_REVISION }}
+        run: |
+          set -euo pipefail
+          [[ "$TRUST_REVISION" =~ ^[a-f0-9]{40}$ ]]
+          git cat-file -e "$TRUST_REVISION^{commit}"
+          git show "$TRUST_REVISION:spec/factory/petclinic/config.json" > "$RUNNER_TEMP/reviewed-factory-config.json"
+          git show "$TRUST_REVISION:spec/protected.sha256" > "$RUNNER_TEMP/reviewed-protected.sha256"
+          cmp spec/factory/petclinic/config.json "$RUNNER_TEMP/reviewed-factory-config.json"
+          cmp spec/protected.sha256 "$RUNNER_TEMP/reviewed-protected.sha256"
+          pin=$(node -p "JSON.parse(require('fs').readFileSync(process.argv[1],'utf8')).factory.revision" "$RUNNER_TEMP/reviewed-factory-config.json")
+          [[ "$pin" =~ ^[a-f0-9]{40}$ ]]
+          dependency="$RUNNER_TEMP/factory-$pin"
+          test ! -e "$dependency"
+          git init "$dependency"
+          git -c credential.helper= -C "$dependency" fetch --depth=1 https://github.com/dgaspard/AI-SDLC-ATDD-SoftwareFactory.git "$pin"
+          git -C "$dependency" checkout --detach FETCH_HEAD
+          test "$(git -C "$dependency" rev-parse HEAD)" = "$pin"
+          test -z "$(git -C "$dependency" status --porcelain)"
+          (cd "$dependency/spec" && npm ci)
+          echo "FACTORY_CHECKOUT=$dependency" >> "$GITHUB_ENV"
+      - run: npm --prefix spec ci
+      # The full tier includes the delivery suite, which has its own package (A-19).
+      - run: npm --prefix spec/delivery ci
+      # Runtime contract RT-001: each project's setup installs its own dependencies (the
+      # services share services/platform). Language-neutral: a rebuilt Python service's
+      # setup works the same way.
+      - run: for s in services/*/setup frontend/setup; do (cd "$(dirname "$s")" && ./setup); done
+      # Preserve the frozen CTL-029 normal-entry gate; the separate consumer run
+      # additionally proves the external trust and dual-identity envelope.
+      - run: node spec/run-all.js
+      - name: Materialize independently reviewed consumer trust
+        env:
+          TRUST_REVISION: ${{ vars.PETCLINIC_TRUST_REVISION }}
+        run: |
+          set -euo pipefail
+          [[ "$TRUST_REVISION" =~ ^[a-f0-9]{40}$ ]]
+          git cat-file -e "$TRUST_REVISION^{commit}"
+          git show "$TRUST_REVISION:tools/petclinic/trust-snapshot.mjs" > "$RUNNER_TEMP/trust-snapshot.mjs"
+          node "$RUNNER_TEMP/trust-snapshot.mjs" --root "$PWD" --reviewed-revision "$TRUST_REVISION" --output "$RUNNER_TEMP/petclinic-trust.json"
+      - run: node "$FACTORY_CHECKOUT/tools/factory/consumer.mjs" verify --root "$PWD" --config spec/factory/petclinic/config.json --trust "$RUNNER_TEMP/petclinic-trust.json" --mode full
+      - run: node spec/run-all.js --verify
+      # Setup scripts and services are pull-request code running in this job. Prove they left
+      # every tracked and non-ignored file as checked out, protected files included.
+      - run: test -z "$(git status --porcelain)"
+      # Logs and run records are kept for failed runs too. No files means the run never
+      # produced evidence, which fails this step visibly instead of passing silently.
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: test-results
+          path: |
+            test-results/
+            factory-evidence/
+          if-no-files-found: error
+          retention-days: 14
