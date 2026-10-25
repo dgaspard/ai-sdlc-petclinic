@@ -209,12 +209,14 @@
       "patch": {
         "operationId": "updateCustomer",
         "summary": "Update a customer profile (outstanding balance is not editable)",
+        "description": "D-67: Resolve an explicitly submitted preferredVeterinarianId against Reservation’s live roster on each PATCH. An existing inactive veterinarian yields 409 invalid_state and changes no profile field. Unknown IDs remain 400 validation_error. Omitted preferredVeterinarianId does not revalidate the existing preference. Existing authorization, privacy and dependency-failure behavior is unchanged.",
         "x-roles": [
           "veterinarian",
           "customer"
         ],
         "x-features": [
-          "spec/features/customer/customer-profile.feature"
+          "spec/features/customer/customer-profile.feature",
+          "spec/features/customer/preferred-veterinarian-conflict.feature"
         ],
         "security": [
           {
@@ -256,6 +258,9 @@
                 }
               }
             }
+          },
+          "409": {
+            "$ref": "common.openapi.json#/components/responses/Conflict"
           },
           "400": {
             "$ref": "common.openapi.json#/components/responses/BadRequest"

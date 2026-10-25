@@ -186,3 +186,19 @@ Then("the cash payment is refused as {string}", function (code) {
   assert.equal(this.cashAttempt.status, 403);
   assert.equal(this.cashAttempt.body.code, code);
 });
+
+// D-67 real service-boundary acceptance; no fake coding runner or mocked roster.
+Given("Jordan successfully chooses Morgan through the real customer API",async function(){
+ this.gpcVet=seed.vet("Dr Morgan Reed").id;
+ const r=await this.call("PATCH",`/customers/${jordan}`,{service:"customer",actor:"jordan.rivera",body:{preferredVeterinarianId:this.gpcVet},expected:200});this.gpcBefore=structuredClone(r.body);
+});
+When("an administrator deactivates Morgan through the real reservation API",async function(){
+ await this.call("PATCH",`/veterinarians/${this.gpcVet}`,{service:"reservation",actor:"avery.taylor",body:{active:false},expected:200});
+});
+When("Jordan repeats the preference with a new phone number through the real customer API",async function(){
+ this.gpcResult=await this.call("PATCH",`/customers/${jordan}`,{service:"customer",actor:"jordan.rivera",body:{preferredVeterinarianId:this.gpcVet,phoneNumber:"312-555-0188"}});
+});
+Then("the real preference update is a 409 conflict and the entire profile is unchanged",async function(){
+ assert.equal(this.gpcResult.status,409);assert.equal(this.gpcResult.body.code,"invalid_state");
+ const after=await this.call("GET",`/customers/${jordan}`,{service:"customer",actor:"jordan.rivera",expected:200});assert.deepEqual(after.body,this.gpcBefore);
+});

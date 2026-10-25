@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "preferred-veterinarian-conflict",
+  "requirementPaths": [
+    "docs/specs/business-decisions.md",
+    "spec/contracts/customer.openapi.json",
+    "spec/features/customer/preferred-veterinarian-conflict.feature",
+    "spec/features/workflows/preferred-veterinarian-conflict.feature",
+    "spec/tests/steps/preferred-veterinarian.steps.js",
+    "spec/tests/workflows/clinic.steps.js"
+  ],
+  "intent": "Implement D-67: explicit PATCH selection of an existing inactive preferred veterinarian returns 409 invalid_state with no partial mutation; unknown IDs remain 400; omitted preference and active choice retain existing behavior.",
+  "permissions": {
+    "create": [],
+    "update": [
+      "services/customer/server.js"
+    ],
+    "delete": []
+  }
+}
