@@ -15,6 +15,27 @@ IMAGE="mcr.microsoft.com/playwright:v1.55.1-noble@sha256:2f29369043d81d6d69a815c
 ROOT="$(cd "$(dirname "$0")/../../.." && pwd)"
 VOLUME_PREFIX="petclinic-browser-$(printf '%s' "$ROOT" | shasum -a 256 | cut -c1-12)"
 
+# A trusted coordinator may provision this exact reference image with dependencies
+# installed ahead of time. Its immutable image identity and this read-only marker
+# must be bound to the reviewed verifier profile. The marker alone is not evidence
+# of isolation. This mode exposes no Docker socket and performs no installation.
+if [ -n "${FACTORY_PREPROVISIONED_BROWSER:-}" ]; then
+  if [ "$FACTORY_PREPROVISIONED_BROWSER" != "1" ] ||
+     [ "$(cat /opt/software-factory/browser-image 2>/dev/null)" != "$IMAGE" ]; then
+    echo "tooling: reviewed preprovisioned browser profile is unavailable" >&2
+    exit 1
+  fi
+  for project in spec services/platform; do
+    want="$(sha256sum "$ROOT/$project/package-lock.json" | cut -d' ' -f1)"
+    if [ "$(cat "$ROOT/$project/node_modules/.lock-sha" 2>/dev/null)" != "$want" ]; then
+      echo "tooling: preprovisioned browser dependencies do not match $project lockfile" >&2
+      exit 1
+    fi
+  done
+  cd "$ROOT/spec"
+  exec ./node_modules/.bin/playwright test --config tests/browser/playwright.config.js "$@"
+fi
+
 if ! docker info >/dev/null 2>&1; then
   echo "tooling: Docker is not running; the browser suite runs in ${IMAGE%@*}" >&2
   exit 1
