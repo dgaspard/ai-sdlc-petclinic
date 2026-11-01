@@ -25,6 +25,15 @@ async function validateVet(v) {
   const vets = await app.dependency(`${urls.reservation}/veterinarians`);
   if (!vets.some((x) => x.id === v && x.active)) fail(400, "validation_error");
 }
+// D-67: an explicit preference patch that names a known-but-inactive veterinarian
+// conflicts with the live roster (409 invalid_state); an unknown ID remains a
+// 400 validation_error. Runs before any profile field is mutated.
+async function validatePatchVet(v) {
+  const vets = await app.dependency(`${urls.reservation}/veterinarians`);
+  const vet = vets.find((x) => x.id === v);
+  if (!vet) fail(400, "validation_error");
+  if (!vet.active) fail(409, "invalid_state");
+}
 // A pet's estimated birth date is at most 30 years before today on the clinic clock.
 const MAX_PET_AGE_YEARS = 30;
 const earliestBirthDate = (today) =>
@@ -107,7 +116,8 @@ app.route("GET", "/customers/{customerId}", ({ user, params }) =>
 );
 app.route("PATCH", "/customers/{customerId}", async ({ user, params, body }) => {
   const c = customer(user, params.customerId);
-  if (body.preferredVeterinarianId) await validateVet(body.preferredVeterinarianId);
+  if (body.preferredVeterinarianId)
+    await validatePatchVet(body.preferredVeterinarianId);
   if (
     body.insurance?.some((p) =>
       p.coveredPetIds.some((pid) => !c.pets.some((pet) => pet.id === pid)),
